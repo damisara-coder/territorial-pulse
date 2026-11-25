@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Territorial Pulse — Baromètre intelligent de l'économie territoriale</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-block">
+      <div class="brand-title">TERRITORIAL PULSE</div>
+      <div class="brand-sub" id="brand-subtitle">Vue nuit : la région vue du ciel, mois par mois</div>
+    </div>
+
+    <nav class="nav-tabs" id="nav-tabs">
+      <button class="nav-tab active" data-view="night" data-i18n="nav_night">Vue Nuit</button>
+      <button class="nav-tab" data-view="dashboard" data-i18n="nav_dash">Tableau de bord</button>
+      <button class="nav-tab" data-view="compare" data-i18n="nav_compare">Comparateur</button>
+      <button class="nav-tab" data-view="nowcast" data-i18n="nav_nowcast">Prévisions</button>
+      <button class="nav-tab" data-view="alerts" data-i18n="nav_alerts">Alertes &amp; Typologie</button>
+      <button class="nav-tab" data-view="simulator" data-i18n="nav_sim">Simulateur</button>
+      <button class="nav-tab" data-view="methodology" data-i18n="nav_method">Méthodologie</button>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-pill" id="btn-theme" title="Basculer Nuit / Clair">
+        <span id="theme-icon">☀</span> <span id="theme-label">Mode clair</span>
+      </button>
+      <button class="icon-pill" id="btn-lang" title="FR / EN">FR</button>
+    </div>
+  </header>
+
+  <main class="main-shell">
+    <!-- ==================== VIEW 1: VUE NUIT (MAQUETTE A) ==================== -->
+    <section id="view-night" class="view active">
+      <div class="night-toolbar">
+        <div class="layer-pills" id="layer-pills">
+          <button class="layer-pill active" data-layer="nightlights_mean" data-i18n="layer_light">Lumière</button>
+          <button class="layer-pill" data-layer="tpi_score" data-i18n="layer_tpi">TPI</button>
+          <button class="layer-pill" data-layer="employment_idx" data-i18n="layer_emp">Emploi</button>
+          <button class="layer-pill" data-layer="tourism_nights_sa" data-i18n="layer_tour">Tourisme</button>
+        </div>
+        <div class="toolbar-hint" id="night-hint">
+          Cliquez sur une province pour explorer ses indicateurs ou exporter sa fiche PDF
+        </div>
+      </div>
+
+      <div class="night-grid">
+        <div class="card map-stage-card">
+          <div class="canvas-wrap">
+            <canvas id="night-canvas"></canvas>
+            <div class="map-tooltip" id="night-tooltip"></div>
+          </div>
+          <div class="timeline-bar">
+            <button class="play-btn" id="night-play" title="Lecture / Pause">▶</button>
+            <div class="slider-group">
+              <div class="slider-date-badge" id="night-date-badge">Oct. 2025</div>
+              <input type="range" id="night-slider" min="0" max="81" value="81" />
+              <div class="slider-bounds">
+                <span>Janv. 2019</span>
+                <span>Oct. 2025</span>
+              </div>
+            </div>
+            <select id="play-speed" class="speed-select" title="Vitesse">
+              <option value="220">1× Smooth</option>
+              <option value="110">2× Rapide</option>
+            </select>
+          </div>
+        </div>
+
+        <aside class="night-sidebar">
+          <!-- Gauge card -->
+          <div class="card side-card">
+            <div class="card-eyebrow" data-i18n="regional_tpi">INDICE RÉGIONAL TPI</div>
+            <div class="gauge-row">
+              <svg id="tpi-gauge-svg" viewBox="0 0 220 135" class="gauge-svg"></svg>
+              <div class="gauge-stats">
+                <div class="stat-delta pos" id="gauge-delta">+0.0 pts</div>
+                <div class="stat-sub" data-i18n="vs_prev_q">vs trim. précédent</div>
+                <div class="stat-sub spaced" data-i18n="forecast_nov">Prévision nov.</div>
+                <div class="stat-forecast" id="gauge-forecast">58.6 ± 1.2</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Live alerts card -->
+          <div class="card side-card">
+            <div class="card-eyebrow" data-i18n="live_alerts">ALERTES EN DIRECT</div>
+            <ul class="alert-list" id="night-alerts-list"></ul>
+          </div>
+
+          <!-- Validation card -->
+          <div class="card side-card">
+            <div class="card-eyebrow" data-i18n="model_validation">VALIDATION DU MODÈLE</div>
+            <div class="validation-row">
+              <div class="val-r" id="val-r-value">r = 0,96*</div>
+              <div class="val-details">
+                <div class="val-label">lumière vs emploi HCP</div>
+                <div class="val-ok" id="val-rmse-msg">erreur de prévision &lt; modèle naïf</div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <div class="footnote">
+        * Corrélation et backtesting glissant calculés sur le panel 2019–2025 (8 provinces × 82 mois). Limites VIIRS documentées dans l'onglet Méthodologie.
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 2: TABLEAU DE BORD CLAIR (MAQUETTE 7) ==================== -->
+    <section id="view-dashboard" class="view">
+      <div class="kpi-grid">
+        <div class="card kpi-card">
+          <div class="kpi-label">Indice régional (TPI)</div>
+          <div class="kpi-value" id="dash-kpi-tpi">— / 100</div>
+          <div class="kpi-sub pos" id="dash-kpi-delta">—</div>
+        </div>
+        <div class="card kpi-card">
+          <div class="kpi-label">Territoires dynamiques (Moteurs)</div>
+          <div class="kpi-value teal" id="dash-kpi-moteurs">— sur 8</div>
+          <div class="kpi-sub" id="dash-kpi-moteurs-list">—</div>
+        </div>
+        <div class="card kpi-card">
+          <div class="kpi-label">Territoires fragiles</div>
+          <div class="kpi-value crimson" id="dash-kpi-fragiles">— sur 8</div>
+          <div class="kpi-sub" id="dash-kpi-fragiles-list">—</div>
+        </div>
+        <div class="card kpi-card">
+          <div class="kpi-label">Écart Tanger / arrière-pays</div>
+          <div class="kpi-value amber" id="dash-kpi-gap">×—</div>
+          <div class="kpi-sub" id="dash-kpi-gap-sub">Corridor vs Chefchaouen–Ouezzane</div>
+        </div>
+      </div>
+
+      <div class="dash-main-grid">
+        <div class="card dash-map-card">
+          <div class="card-header-row">
+            <h3>Carte interactive — Indice TPI par province</h3>
+            <span class="pill-badge" id="dash-date-badge">Oct. 2025</span>
+          </div>
+          <div class="canvas-wrap dash-canvas-wrap">
+            <canvas id="dash-canvas"></canvas>
+            <div class="map-tooltip" id="dash-tooltip"></div>
+          </div>
+          <div class="choropleth-legend">
+            <span class="legend-txt">Fragile</span>
+            <span class="swatch c1"></span>
+            <span class="swatch c2"></span>
+            <span class="swatch c3"></span>
+            <span class="swatch c4"></span>
+            <span class="legend-txt">Dynamique</span>
+          </div>
+          <div class="timeline-bar compact">
+            <button class="play-btn" id="dash-play">▶</button>
+            <div class="slider-group">
+              <input type="range" id="dash-slider" min="0" max="81" value="81" />
+              <div class="slider-bounds"><span>2019</span><span>2025</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dash-charts-col">
+          <div class="card chart-card">
+            <div class="card-header-row">
+              <h3>Évolution de l'indice (2019–2025) &amp; Nowcast</h3>
+              <select id="dash-prov-select" class="inline-select"></select>
+            </div>
+            <svg id="dash-evo-svg" viewBox="0 0 540 230" class="chart-svg"></svg>
+          </div>
+          <div class="card chart-card">
+            <div class="card-header-row">
+              <h3>Classement TPI</h3>
+              <button class="btn-outline" id="dash-export-btn">Exporter Fiche PDF</button>
+            </div>
+            <svg id="dash-rank-svg" viewBox="0 0 540 230" class="chart-svg"></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="dash-alert-banner" id="dash-alert-banner"></div>
+    </section>
+
+    <!-- ==================== VIEW 3: COMPARATEUR ==================== -->
+    <section id="view-compare" class="view">
+      <div class="card section-pad">
+        <div class="card-header-row">
+          <div>
+            <h2>Comparateur territorial (2 à 4 provinces)</h2>
+            <p class="muted">Superposition des trajectoires TPI 2019–2025 et profils radar sur 6 composantes.</p>
+          </div>
+        </div>
+        <div class="chip-selector" id="compare-chips"></div>
+      </div>
+
+      <div class="two-col-grid">
+        <div class="card section-pad">
+          <h3>Trajectoires mensuelles comparées</h3>
+          <svg id="compare-line-svg" viewBox="0 0 580 280" class="chart-svg"></svg>
+        </div>
+        <div class="card section-pad">
+          <h3>Radar des composantes (dernier mois)</h3>
+          <svg id="compare-radar-svg" viewBox="0 0 420 290" class="chart-svg"></svg>
+        </div>
+      </div>
+
+      <div class="card section-pad">
+        <h3>Tableau comparatif détaillé</h3>
+        <div class="table-scroll">
+          <table class="data-table" id="compare-table"></table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 4: PRÉVISIONS (NOWCASTING) ==================== -->
+    <section id="view-nowcast" class="view">
+      <div class="kpi-grid" id="nowcast-kpis"></div>
+      <div class="two-col-grid">
+        <div class="card section-pad">
+          <div class="card-header-row">
+            <h3>Validation glissante : Emploi HCP réel vs Nowcast</h3>
+            <select id="nowcast-prov-select" class="inline-select"></select>
+          </div>
+          <svg id="nowcast-bt-svg" viewBox="0 0 580 270" class="chart-svg"></svg>
+        </div>
+        <div class="card section-pad">
+          <h3>Importance des variables (contribution standardisée)</h3>
+          <svg id="nowcast-imp-svg" viewBox="0 0 540 270" class="chart-svg"></svg>
+        </div>
+      </div>
+
+      <div class="card section-pad">
+        <h3>Prévision du mois suivant (Novembre 2025) avec intervalle de confiance à 90 %</h3>
+        <div class="table-scroll">
+          <table class="data-table" id="nowcast-table"></table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 5: ALERTES & TYPOLOGIE ==================== -->
+    <section id="view-alerts" class="view">
+      <div class="card section-pad">
+        <div class="card-header-row">
+          <div>
+            <h2>Détection d'alertes &amp; ruptures</h2>
+            <p class="muted">Ajustez les seuils en temps réel pour tester la sensibilité du système d'alerte précoce.</p>
+          </div>
+        </div>
+        <div class="threshold-controls">
+          <label>Seuil décrochage (3m / emploi) : <strong id="lbl-drop">-5 %</strong>
+            <input type="range" id="rng-drop" min="-20" max="-1" step="1" value="-5" />
+          </label>
+          <label>Seuil accélération (12m) : <strong id="lbl-surge">+10 %</strong>
+            <input type="range" id="rng-surge" min="3" max="25" step="1" value="10" />
+          </label>
+          <label>Fenêtre de stagnation : <strong id="lbl-stag">6 mois</strong>
+            <input type="range" id="rng-stag" min="3" max="12" step="3" value="6" />
+          </label>
+        </div>
+        <div class="alerts-cards-grid" id="alerts-filtered-grid"></div>
+      </div>
+
+      <div class="two-col-grid">
+        <div class="card section-pad">
+          <h3>Typologie K-Means (3 profils économiques)</h3>
+          <div id="typology-clusters" class="clusters-stack"></div>
+        </div>
+        <div class="card section-pad">
+          <h3>Ruptures historiques détectées (dont choc Covid-19 2020)</h3>
+          <ul class="shock-list" id="historical-shocks-list"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 6: SIMULATEUR « ET SI ? » ==================== -->
+    <section id="view-simulator" class="view">
+      <div class="two-col-grid">
+        <div class="card section-pad">
+          <div class="card-header-row">
+            <h2>Simulateur de politique territoriale « Et si ? »</h2>
+            <select id="sim-prov-select" class="inline-select"></select>
+          </div>
+          <p class="muted">Simulez un choc ou un programme d'investissement sectoriel sur les composantes normalisées.</p>
+          <div class="sim-sliders" id="sim-sliders"></div>
+          <button class="btn-outline" id="sim-reset">Réinitialiser les scénarios</button>
+        </div>
+
+        <div class="card section-pad sim-result-card">
+          <h3>Impact estimé sur l'indice TPI et le classement</h3>
+          <div class="sim-kpi-row">
+            <div class="sim-box">
+              <div class="kpi-label">TPI actuel</div>
+              <div class="kpi-value" id="sim-base-tpi">—</div>
+            </div>
+            <div class="sim-arrow">→</div>
+            <div class="sim-box highlight">
+              <div class="kpi-label">TPI simulé</div>
+              <div class="kpi-value" id="sim-new-tpi">—</div>
+              <div class="kpi-sub" id="sim-delta-tpi">—</div>
+            </div>
+          </div>
+          <div class="sim-meta-grid">
+            <div class="sim-meta-item">
+              <span>Classement régional</span>
+              <strong id="sim-rank">—</strong>
+            </div>
+            <div class="sim-meta-item">
+              <span>Profil résultant</span>
+              <strong id="sim-cluster">—</strong>
+            </div>
+          </div>
+          <svg id="sim-bar-svg" viewBox="0 0 520 220" class="chart-svg"></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 7: MÉTHODOLOGIE, DONNÉES & EXPORT PDF ==================== -->
+    <section id="view-methodology" class="view">
+      <div class="two-col-grid">
+        <div class="card section-pad">
+          <h2>Export des Fiches Territoire (PDF décideur)</h2>
+          <p class="muted">Chaque fiche A4 synthétise l'indice, la trajectoire 2019–2025, les composantes, les points forts/vigilance et 3 recommandations actionnables.</p>
+          <div class="pdf-grid" id="pdf-export-grid"></div>
+        </div>
+
+        <div class="card section-pad">
+          <h2>Téléchargement du Dataset &amp; Documentation</h2>
+          <p class="muted">Panel unifié (8 provinces × 82 mois = 656 observations), dictionnaire complet et base analytique DuckDB.</p>
+          <div class="download-actions">
+            <a class="btn-primary" href="/api/download/parquet" download>Télécharger Parquet (.parquet)</a>
+            <a class="btn-outline" href="/api/download/csv" download>Télécharger CSV (.csv)</a>
+            <a class="btn-outline" href="/api/download/duckdb" download>Télécharger DuckDB (.duckdb)</a>
+            <a class="btn-outline" href="/api/download/dictionary" download>Dictionnaire des données (.md)</a>
+          </div>
+          <div class="method-box" id="sensitivity-summary"></div>
+        </div>
+      </div>
+
+      <div class="card section-pad">
+        <h3>Transparence scientifique &amp; limites méthodologiques</h3>
+        <div class="method-cards-grid">
+          <div class="method-item">
+            <h4>1. Indice TPI &amp; pondération</h4>
+            <p>Combinaison linéaire de 6 piliers désaisonnalisés (STL) : Lumière VIIRS (25 %), Emploi &amp; offres (25 %), Entreprises OMPIC (15 %), Trafic portuaire (13 %), Tourisme (12 %), Recherches web (10 %). Corrélation avec l'ACP : <strong id="m-pca-corr">—</strong>.</p>
+          </div>
+          <div class="method-item">
+            <h4>2. Limites de la lumière nocturne</h4>
+            <p>La radiance VIIRS capte fidèlement l'industrie, la logistique et les services urbains, mais sous-estime l'activité agricole et rurale (Chefchaouen, Ouezzane) et peut saturer dans les hyper-centres. C'est pourquoi le TPI croise la lumière avec le HCP, l'emploi en ligne et le tourisme.</p>
+          </div>
+          <div class="method-item">
+            <h4>3. Nowcasting &amp; validation</h4>
+            <p>Régression Ridge L2 évaluée en validation croisée glissante (2021–2025) avec un décalage réaliste de 2 mois sur les données HCP officielles. Erreur inférieure au modèle naïf de référence.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Province Quick Drawer -->
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+  <aside class="province-drawer" id="province-drawer">
+    <div class="drawer-head">
+      <div>
+        <div class="card-eyebrow" id="drw-type">PROVINCE</div>
+        <h2 id="drw-name">—</h2>
+      </div>
+      <button class="close-btn" id="drw-close">✕</button>
+    </div>
+    <div class="drawer-body" id="drw-body"></div>
+  </aside>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

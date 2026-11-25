@@ -1,0 +1,482 @@
+{
+  "type": "FeatureCollection",
+  "name": "Tanger-Tetouan-AlHoceima_Provinces",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "TTA-01",
+      "properties": {
+        "province_id": "TTA-01",
+        "name": "Tanger-Assilah",
+        "type": "Préfecture",
+        "centroid": [
+          -5.84,
+          35.63
+        ],
+        "urban_hub": [
+          -5.81,
+          35.76
+        ],
+        "population_2024": 1358000,
+        "area_km2": 952
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -6.06,
+              35.42
+            ],
+            [
+              -5.96,
+              35.62
+            ],
+            [
+              -5.93,
+              35.79
+            ],
+            [
+              -5.78,
+              35.81
+            ],
+            [
+              -5.67,
+              35.83
+            ],
+            [
+              -5.64,
+              35.62
+            ],
+            [
+              -5.69,
+              35.45
+            ],
+            [
+              -6.06,
+              35.42
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "TTA-02",
+      "properties": {
+        "province_id": "TTA-02",
+        "name": "Fahs-Anjra",
+        "type": "Province",
+        "centroid": [
+          -5.52,
+          35.75
+        ],
+        "urban_hub": [
+          -5.5,
+          35.8
+        ],
+        "population_2024": 98000,
+        "area_km2": 799
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -5.67,
+              35.83
+            ],
+            [
+              -5.52,
+              35.91
+            ],
+            [
+              -5.41,
+              35.9
+            ],
+            [
+              -5.39,
+              35.72
+            ],
+            [
+              -5.48,
+              35.63
+            ],
+            [
+              -5.64,
+              35.62
+            ],
+            [
+              -5.67,
+              35.83
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "TTA-04",
+      "properties": {
+        "province_id": "TTA-04",
+        "name": "M'diq-Fnideq",
+        "type": "Préfecture",
+        "centroid": [
+          -5.33,
+          35.77
+        ],
+        "urban_hub": [
+          -5.34,
+          35.78
+        ],
+        "population_2024": 256000,
+        "area_km2": 213
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -5.41,
+              35.9
+            ],
+            [
+              -5.34,
+              35.9
+            ],
+            [
+              -5.27,
+              35.63
+            ],
+            [
+              -5.36,
+              35.61
+            ],
+            [
+              -5.39,
+              35.72
+            ],
+            [
+              -5.41,
+              35.9
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "TTA-03",
+      "properties": {
+        "province_id": "TTA-03",
+        "name": "Tétouan",
+        "type": "Province",
+        "centroid": [
+          -5.39,
+          35.51
+        ],
+        "urban_hub": [
+          -5.37,
+          35.57
+        ],
+        "population_2024": 625000,
+        "area_km2": 2541
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -5.64,
+              35.62
+            ],
+            [
+              -5.48,
+              35.63
+            ],
+            [
+              -5.39,
+              35.72
+            ],
+            [
+              -5.36,
+              35.61
+            ],
+            [
+              -5.27,
+              35.63
+            ],
+            [
+              -5.12,
+              35.46
+            ],
+            [
+              -5.17,
+              35.34
+            ],
+            [
+              -5.42,
+              35.37
+            ],
+            [
+              -5.62,
+              35.38
+            ],
+            [
+              -5.69,
+              35.45
+            ],
+            [
+              -5.64,
+              35.62
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "TTA-05",
+      "properties": {
+        "province_id": "TTA-05",
+        "name": "Larache",
+        "type": "Province",
+        "centroid": [
+          -5.9,
+          35.15
+        ],
+        "urban_hub": [
+          -6.05,
+          35.18
+        ],
+        "population_2024": 540000,
+        "area_km2": 2783
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -6.22,
+              35.02
+            ],
+            [
+              -6.06,
+              35.42
+            ],
+            [
+              -5.69,
+              35.45
+            ],
+            [
+              -5.62,
+              35.38
+            ],
+            [
+              -5.58,
+              35.06
+            ],
+            [
+              -5.82,
+              34.93
+            ],
+            [
+              -6.16,
+              34.89
+            ],
+            [
+              -6.22,
+              35.02
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "TTA-08",
+      "properties": {
+        "province_id": "TTA-08",
+        "name": "Ouezzane",
+        "type": "Province",
+        "centroid": [
+          -5.56,
+          34.84
+        ],
+        "urban_hub": [
+          -5.58,
+          34.8
+        ],
+        "population_2024": 318000,
+        "area_km2": 1861
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -5.82,
+              34.93
+            ],
+            [
+              -5.58,
+              35.06
+            ],
+            [
+              -5.35,
+              35.02
+            ],
+            [
+              -5.32,
+              34.71
+            ],
+            [
+              -5.56,
+              34.62
+            ],
+            [
+              -5.8,
+              34.72
+            ],
+            [
+              -5.82,
+              34.93
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "TTA-07",
+      "properties": {
+        "province_id": "TTA-07",
+        "name": "Chefchaouen",
+        "type": "Province",
+        "centroid": [
+          -5.1,
+          35.1
+        ],
+        "urban_hub": [
+          -5.26,
+          35.17
+        ],
+        "population_2024": 485000,
+        "area_km2": 4350
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -5.62,
+              35.38
+            ],
+            [
+              -5.42,
+              35.37
+            ],
+            [
+              -5.17,
+              35.34
+            ],
+            [
+              -5.12,
+              35.46
+            ],
+            [
+              -4.85,
+              35.3
+            ],
+            [
+              -4.64,
+              35.19
+            ],
+            [
+              -4.69,
+              34.82
+            ],
+            [
+              -5.02,
+              34.78
+            ],
+            [
+              -5.32,
+              34.71
+            ],
+            [
+              -5.35,
+              35.02
+            ],
+            [
+              -5.58,
+              35.06
+            ],
+            [
+              -5.62,
+              35.38
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "TTA-06",
+      "properties": {
+        "province_id": "TTA-06",
+        "name": "Al Hoceïma",
+        "type": "Province",
+        "centroid": [
+          -4.22,
+          35.06
+        ],
+        "urban_hub": [
+          -3.94,
+          35.24
+        ],
+        "population_2024": 418000,
+        "area_km2": 3550
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -4.64,
+              35.19
+            ],
+            [
+              -4.35,
+              35.22
+            ],
+            [
+              -3.95,
+              35.28
+            ],
+            [
+              -3.79,
+              35.15
+            ],
+            [
+              -3.84,
+              34.86
+            ],
+            [
+              -4.18,
+              34.81
+            ],
+            [
+              -4.69,
+              34.82
+            ],
+            [
+              -4.64,
+              35.19
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

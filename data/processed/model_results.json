@@ -1,0 +1,4349 @@
+{
+  "metadata": {
+    "region": "Tanger-Tétouan-Al Hoceïma",
+    "n_provinces": 8,
+    "n_months": 82,
+    "n_rows": 656,
+    "start_date": "2019-01-01",
+    "latest_date": "2025-10-01"
+  },
+  "regional_summary": {
+    "latest_tpi": 58.6,
+    "delta_vs_prev_quarter": 0.0,
+    "n_moteurs": 3,
+    "n_transition": 3,
+    "n_fragiles": 2
+  },
+  "tpi_methodology": {
+    "expert_weights": {
+      "nightlights_sa": 0.25,
+      "employment_idx": 0.25,
+      "business_creations_sa": 0.15,
+      "tourism_nights_sa": 0.12,
+      "port_traffic_sa": 0.13,
+      "web_trends_sa": 0.1
+    },
+    "pca_weights": {
+      "nightlights_sa": 0.1811,
+      "employment_idx": 0.1837,
+      "business_creations_sa": 0.1786,
+      "tourism_nights_sa": 0.1151,
+      "port_traffic_sa": 0.1613,
+      "web_trends_sa": 0.1802
+    },
+    "expert_vs_pca_corr": 0.9994,
+    "sensitivity": {
+      "n_simulations": 200,
+      "perturbation_pct": 25,
+      "mean_spearman_rank_corr": 1.0,
+      "min_spearman_rank_corr": 1.0,
+      "mean_max_score_diff_pts": 0.95,
+      "top3_stability_pct": 100.0
+    }
+  },
+  "typology": {
+    "clusters": [
+      {
+        "label": "Moteur",
+        "description": "Pôles industriels, logistiques et tertiaires à forte intensité lumineuse et création d'entreprises soutenue.",
+        "provinces": [
+          "Tanger-Assilah",
+          "Fahs-Anjra",
+          "Tétouan"
+        ],
+        "province_ids": [
+          "TTA-01",
+          "TTA-02",
+          "TTA-03"
+        ],
+        "mean_tpi": 77.29,
+        "mean_delta_12m": 2.0
+      },
+      {
+        "label": "En transition",
+        "description": "Territoires intermédiaires à potentiel agro-industriel ou touristique soumis à une forte saisonnalité.",
+        "provinces": [
+          "M'diq-Fnideq",
+          "Larache",
+          "Al Hoceïma"
+        ],
+        "province_ids": [
+          "TTA-04",
+          "TTA-05",
+          "TTA-06"
+        ],
+        "mean_tpi": 57.15,
+        "mean_delta_12m": 0.84
+      },
+      {
+        "label": "Fragile",
+        "description": "Arrière-pays rural ou montagneux à faible densité industrielle nécessitant un désenclavement ciblé.",
+        "provinces": [
+          "Chefchaouen",
+          "Ouezzane"
+        ],
+        "province_ids": [
+          "TTA-07",
+          "TTA-08"
+        ],
+        "mean_tpi": 30.71,
+        "mean_delta_12m": -1.57
+      }
+    ],
+    "provinces": [
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "tpi_mean_12m": 86.51,
+        "tpi_latest": 87.5,
+        "tpi_delta_12m": 2.0,
+        "nightlights_sa": 88.62,
+        "employment_idx": 87.2,
+        "business_creations_sa": 88.17,
+        "tourism_nights_sa": 86.3,
+        "port_traffic_sa": 80.92,
+        "web_trends_sa": 84.53,
+        "cluster_label": "Moteur"
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "tpi_mean_12m": 74.94,
+        "tpi_latest": 75.47,
+        "tpi_delta_12m": 1.85,
+        "nightlights_sa": 86.82,
+        "employment_idx": 81.24,
+        "business_creations_sa": 63.18,
+        "tourism_nights_sa": 46.69,
+        "port_traffic_sa": 90.96,
+        "web_trends_sa": 60.15,
+        "cluster_label": "Moteur"
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "tpi_mean_12m": 70.41,
+        "tpi_latest": 71.57,
+        "tpi_delta_12m": 2.14,
+        "nightlights_sa": 76.73,
+        "employment_idx": 72.17,
+        "business_creations_sa": 71.21,
+        "tourism_nights_sa": 73.61,
+        "port_traffic_sa": 52.93,
+        "web_trends_sa": 67.91,
+        "cluster_label": "Moteur"
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "tpi_mean_12m": 62.51,
+        "tpi_latest": 63.4,
+        "tpi_delta_12m": 1.53,
+        "nightlights_sa": 71.57,
+        "employment_idx": 61.62,
+        "business_creations_sa": 53.32,
+        "tourism_nights_sa": 83.02,
+        "port_traffic_sa": 46.35,
+        "web_trends_sa": 52.27,
+        "cluster_label": "En transition"
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "tpi_mean_12m": 55.16,
+        "tpi_latest": 55.47,
+        "tpi_delta_12m": 0.41,
+        "nightlights_sa": 58.02,
+        "employment_idx": 56.84,
+        "business_creations_sa": 55.6,
+        "tourism_nights_sa": 53.09,
+        "port_traffic_sa": 55.18,
+        "web_trends_sa": 45.65,
+        "cluster_label": "En transition"
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "tpi_mean_12m": 53.79,
+        "tpi_latest": 54.04,
+        "tpi_delta_12m": 0.58,
+        "nightlights_sa": 54.74,
+        "employment_idx": 53.57,
+        "business_creations_sa": 51.94,
+        "tourism_nights_sa": 66.23,
+        "port_traffic_sa": 51.03,
+        "web_trends_sa": 43.42,
+        "cluster_label": "En transition"
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "tpi_mean_12m": 38.17,
+        "tpi_latest": 38.38,
+        "tpi_delta_12m": -0.5,
+        "nightlights_sa": 35.48,
+        "employment_idx": 35.0,
+        "business_creations_sa": 33.47,
+        "tourism_nights_sa": 74.04,
+        "port_traffic_sa": 24.72,
+        "web_trends_sa": 34.32,
+        "cluster_label": "Fragile"
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "tpi_mean_12m": 23.25,
+        "tpi_latest": 22.65,
+        "tpi_delta_12m": -2.64,
+        "nightlights_sa": 21.1,
+        "employment_idx": 24.26,
+        "business_creations_sa": 27.1,
+        "tourism_nights_sa": 26.6,
+        "port_traffic_sa": 15.33,
+        "web_trends_sa": 26.58,
+        "cluster_label": "Fragile"
+      }
+    ]
+  },
+  "nowcasting": {
+    "forecast_date": "2025-11-01",
+    "regional_nowcast": {
+      "current_tpi": 58.6,
+      "forecast_tpi": 58.6,
+      "uncertainty_halfwidth": 1.2,
+      "ci_low": 57.4,
+      "ci_high": 59.8
+    },
+    "province_nowcasts": [
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "latest_date": "2025-10-01",
+        "forecast_date": "2025-11-01",
+        "current_tpi": 87.5,
+        "forecast_tpi": 87.6,
+        "uncertainty_halfwidth": 1.34,
+        "ci_low": 86.26,
+        "ci_high": 88.94,
+        "delta_vs_current": 0.1
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "latest_date": "2025-10-01",
+        "forecast_date": "2025-11-01",
+        "current_tpi": 75.47,
+        "forecast_tpi": 75.63,
+        "uncertainty_halfwidth": 1.34,
+        "ci_low": 74.29,
+        "ci_high": 76.97,
+        "delta_vs_current": 0.16
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "latest_date": "2025-10-01",
+        "forecast_date": "2025-11-01",
+        "current_tpi": 71.57,
+        "forecast_tpi": 71.6,
+        "uncertainty_halfwidth": 1.34,
+        "ci_low": 70.26,
+        "ci_high": 72.94,
+        "delta_vs_current": 0.03
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "latest_date": "2025-10-01",
+        "forecast_date": "2025-11-01",
+        "current_tpi": 63.4,
+        "forecast_tpi": 63.45,
+        "uncertainty_halfwidth": 1.34,
+        "ci_low": 62.11,
+        "ci_high": 64.79,
+        "delta_vs_current": 0.05
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "latest_date": "2025-10-01",
+        "forecast_date": "2025-11-01",
+        "current_tpi": 55.47,
+        "forecast_tpi": 55.51,
+        "uncertainty_halfwidth": 1.34,
+        "ci_low": 54.17,
+        "ci_high": 56.85,
+        "delta_vs_current": 0.04
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "latest_date": "2025-10-01",
+        "forecast_date": "2025-11-01",
+        "current_tpi": 54.04,
+        "forecast_tpi": 54.11,
+        "uncertainty_halfwidth": 1.34,
+        "ci_low": 52.77,
+        "ci_high": 55.45,
+        "delta_vs_current": 0.07
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "latest_date": "2025-10-01",
+        "forecast_date": "2025-11-01",
+        "current_tpi": 38.38,
+        "forecast_tpi": 38.09,
+        "uncertainty_halfwidth": 1.34,
+        "ci_low": 36.75,
+        "ci_high": 39.43,
+        "delta_vs_current": -0.29
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "latest_date": "2025-10-01",
+        "forecast_date": "2025-11-01",
+        "current_tpi": 22.65,
+        "forecast_tpi": 22.68,
+        "uncertainty_halfwidth": 1.34,
+        "ci_low": 21.34,
+        "ci_high": 24.02,
+        "delta_vs_current": 0.03
+      }
+    ],
+    "hcp_nowcast_metrics": {
+      "rmse_model": 2.893,
+      "rmse_naive": 3.207,
+      "rmse_gain_pct": 9.8,
+      "mae_model": 2.363,
+      "mae_naive": 2.593,
+      "mape_model_pct": 4.19,
+      "mape_naive_pct": 4.94,
+      "beats_naive": true
+    },
+    "tpi_forecast_metrics": {
+      "rmse_model": 0.799,
+      "rmse_naive": 0.82,
+      "beats_naive": true,
+      "interval_90_halfwidth": 1.34
+    },
+    "feature_importance": [
+      {
+        "feature": "hcp_lag2",
+        "label": "Emploi HCP retardé (t-2)",
+        "importance_pct": 31.5,
+        "coef_std": 7.497
+      },
+      {
+        "feature": "nightlights_sa",
+        "label": "Lumière nocturne (VIIRS t)",
+        "importance_pct": 12.1,
+        "coef_std": 2.88
+      },
+      {
+        "feature": "web_trends_sa",
+        "label": "Recherches web (Trends t)",
+        "importance_pct": 11.4,
+        "coef_std": 2.707
+      },
+      {
+        "feature": "business_creations_sa",
+        "label": "Créations d'entreprises (OMPIC)",
+        "importance_pct": 11.0,
+        "coef_std": -2.613
+      },
+      {
+        "feature": "trends_lag1",
+        "label": "Recherches web (t-1)",
+        "importance_pct": 10.0,
+        "coef_std": 2.374
+      },
+      {
+        "feature": "jobs_lag0",
+        "label": "Offres d'emploi en ligne",
+        "importance_pct": 8.5,
+        "coef_std": 2.023
+      },
+      {
+        "feature": "tourism_nights_sa",
+        "label": "Nuitées touristiques",
+        "importance_pct": 7.4,
+        "coef_std": -1.761
+      },
+      {
+        "feature": "nl_lag1",
+        "label": "Lumière nocturne (t-1)",
+        "importance_pct": 5.2,
+        "coef_std": 1.244
+      },
+      {
+        "feature": "port_traffic_sa",
+        "label": "Trafic portuaire",
+        "importance_pct": 2.8,
+        "coef_std": 0.677
+      }
+    ],
+    "backtest_series": [
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2021-01-01",
+        "actual_hcp": 69.01,
+        "pred_hcp": 69.9,
+        "naive_hcp": 70.42
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2021-01-01",
+        "actual_hcp": 64.87,
+        "pred_hcp": 63.92,
+        "naive_hcp": 64.91
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2021-01-01",
+        "actual_hcp": 59.81,
+        "pred_hcp": 61.91,
+        "naive_hcp": 60.85
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2021-01-01",
+        "actual_hcp": 49.57,
+        "pred_hcp": 54.47,
+        "naive_hcp": 55.25
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2021-01-01",
+        "actual_hcp": 49.03,
+        "pred_hcp": 53.76,
+        "naive_hcp": 51.47
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2021-01-01",
+        "actual_hcp": 45.74,
+        "pred_hcp": 49.7,
+        "naive_hcp": 46.7
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2021-01-01",
+        "actual_hcp": 36.83,
+        "pred_hcp": 37.99,
+        "naive_hcp": 41.35
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2021-01-01",
+        "actual_hcp": 35.41,
+        "pred_hcp": 35.3,
+        "naive_hcp": 37.84
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2021-02-01",
+        "actual_hcp": 69.83,
+        "pred_hcp": 68.51,
+        "naive_hcp": 69.64
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2021-02-01",
+        "actual_hcp": 63.79,
+        "pred_hcp": 63.99,
+        "naive_hcp": 64.51
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2021-02-01",
+        "actual_hcp": 60.33,
+        "pred_hcp": 61.69,
+        "naive_hcp": 61.52
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2021-02-01",
+        "actual_hcp": 53.11,
+        "pred_hcp": 54.68,
+        "naive_hcp": 52.83
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2021-02-01",
+        "actual_hcp": 51.31,
+        "pred_hcp": 51.37,
+        "naive_hcp": 48.95
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2021-02-01",
+        "actual_hcp": 44.85,
+        "pred_hcp": 47.43,
+        "naive_hcp": 43.61
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2021-02-01",
+        "actual_hcp": 37.49,
+        "pred_hcp": 39.26,
+        "naive_hcp": 40.4
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2021-02-01",
+        "actual_hcp": 40.25,
+        "pred_hcp": 40.17,
+        "naive_hcp": 41.95
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2021-03-01",
+        "actual_hcp": 71.32,
+        "pred_hcp": 68.01,
+        "naive_hcp": 69.01
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2021-03-01",
+        "actual_hcp": 65.96,
+        "pred_hcp": 64.79,
+        "naive_hcp": 64.87
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2021-03-01",
+        "actual_hcp": 61.33,
+        "pred_hcp": 62.31,
+        "naive_hcp": 59.81
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2021-03-01",
+        "actual_hcp": 51.8,
+        "pred_hcp": 53.02,
+        "naive_hcp": 49.57
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2021-03-01",
+        "actual_hcp": 48.59,
+        "pred_hcp": 51.16,
+        "naive_hcp": 49.03
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2021-03-01",
+        "actual_hcp": 47.44,
+        "pred_hcp": 49.02,
+        "naive_hcp": 45.74
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2021-03-01",
+        "actual_hcp": 39.29,
+        "pred_hcp": 39.0,
+        "naive_hcp": 36.83
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2021-03-01",
+        "actual_hcp": 34.94,
+        "pred_hcp": 37.58,
+        "naive_hcp": 35.41
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2021-04-01",
+        "actual_hcp": 72.1,
+        "pred_hcp": 66.91,
+        "naive_hcp": 69.83
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2021-04-01",
+        "actual_hcp": 68.27,
+        "pred_hcp": 62.88,
+        "naive_hcp": 63.79
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2021-04-01",
+        "actual_hcp": 62.44,
+        "pred_hcp": 61.48,
+        "naive_hcp": 60.33
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2021-04-01",
+        "actual_hcp": 57.05,
+        "pred_hcp": 54.46,
+        "naive_hcp": 53.11
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2021-04-01",
+        "actual_hcp": 53.47,
+        "pred_hcp": 52.04,
+        "naive_hcp": 51.31
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2021-04-01",
+        "actual_hcp": 45.93,
+        "pred_hcp": 48.64,
+        "naive_hcp": 44.85
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2021-04-01",
+        "actual_hcp": 41.33,
+        "pred_hcp": 38.96,
+        "naive_hcp": 37.49
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2021-04-01",
+        "actual_hcp": 39.5,
+        "pred_hcp": 39.0,
+        "naive_hcp": 40.25
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2021-05-01",
+        "actual_hcp": 73.32,
+        "pred_hcp": 69.12,
+        "naive_hcp": 71.32
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2021-05-01",
+        "actual_hcp": 68.31,
+        "pred_hcp": 64.0,
+        "naive_hcp": 65.96
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2021-05-01",
+        "actual_hcp": 63.97,
+        "pred_hcp": 63.22,
+        "naive_hcp": 61.33
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2021-05-01",
+        "actual_hcp": 61.07,
+        "pred_hcp": 55.14,
+        "naive_hcp": 51.8
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2021-05-01",
+        "actual_hcp": 51.97,
+        "pred_hcp": 52.33,
+        "naive_hcp": 48.59
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2021-05-01",
+        "actual_hcp": 50.5,
+        "pred_hcp": 50.04,
+        "naive_hcp": 47.44
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2021-05-01",
+        "actual_hcp": 41.69,
+        "pred_hcp": 39.92,
+        "naive_hcp": 39.29
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2021-05-01",
+        "actual_hcp": 38.92,
+        "pred_hcp": 36.81,
+        "naive_hcp": 34.94
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2021-06-01",
+        "actual_hcp": 75.36,
+        "pred_hcp": 70.2,
+        "naive_hcp": 72.1
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2021-06-01",
+        "actual_hcp": 70.79,
+        "pred_hcp": 65.37,
+        "naive_hcp": 68.27
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2021-06-01",
+        "actual_hcp": 64.86,
+        "pred_hcp": 63.07,
+        "naive_hcp": 62.44
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2021-06-01",
+        "actual_hcp": 63.8,
+        "pred_hcp": 57.37,
+        "naive_hcp": 57.05
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2021-06-01",
+        "actual_hcp": 54.34,
+        "pred_hcp": 54.75,
+        "naive_hcp": 53.47
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2021-06-01",
+        "actual_hcp": 52.21,
+        "pred_hcp": 50.3,
+        "naive_hcp": 45.93
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2021-06-01",
+        "actual_hcp": 45.77,
+        "pred_hcp": 42.66,
+        "naive_hcp": 41.33
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2021-06-01",
+        "actual_hcp": 42.3,
+        "pred_hcp": 40.4,
+        "naive_hcp": 39.5
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2021-07-01",
+        "actual_hcp": 74.05,
+        "pred_hcp": 71.14,
+        "naive_hcp": 73.32
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2021-07-01",
+        "actual_hcp": 72.39,
+        "pred_hcp": 67.1,
+        "naive_hcp": 68.31
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2021-07-01",
+        "actual_hcp": 66.99,
+        "pred_hcp": 65.98,
+        "naive_hcp": 63.97
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2021-07-01",
+        "actual_hcp": 63.8,
+        "pred_hcp": 59.1,
+        "naive_hcp": 61.07
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2021-07-01",
+        "actual_hcp": 54.82,
+        "pred_hcp": 53.53,
+        "naive_hcp": 51.97
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2021-07-01",
+        "actual_hcp": 53.48,
+        "pred_hcp": 51.71,
+        "naive_hcp": 50.5
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2021-07-01",
+        "actual_hcp": 43.96,
+        "pred_hcp": 41.06,
+        "naive_hcp": 41.69
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2021-07-01",
+        "actual_hcp": 43.71,
+        "pred_hcp": 40.98,
+        "naive_hcp": 38.92
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2021-08-01",
+        "actual_hcp": 73.59,
+        "pred_hcp": 72.28,
+        "naive_hcp": 75.36
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2021-08-01",
+        "actual_hcp": 70.86,
+        "pred_hcp": 68.33,
+        "naive_hcp": 70.79
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2021-08-01",
+        "actual_hcp": 66.78,
+        "pred_hcp": 64.44,
+        "naive_hcp": 64.86
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2021-08-01",
+        "actual_hcp": 65.2,
+        "pred_hcp": 60.25,
+        "naive_hcp": 63.8
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2021-08-01",
+        "actual_hcp": 55.88,
+        "pred_hcp": 54.47,
+        "naive_hcp": 54.34
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2021-08-01",
+        "actual_hcp": 53.13,
+        "pred_hcp": 52.56,
+        "naive_hcp": 52.21
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2021-08-01",
+        "actual_hcp": 44.17,
+        "pred_hcp": 41.09,
+        "naive_hcp": 45.77
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2021-08-01",
+        "actual_hcp": 44.73,
+        "pred_hcp": 40.9,
+        "naive_hcp": 42.3
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2021-09-01",
+        "actual_hcp": 75.37,
+        "pred_hcp": 72.94,
+        "naive_hcp": 74.05
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2021-09-01",
+        "actual_hcp": 68.69,
+        "pred_hcp": 68.65,
+        "naive_hcp": 72.39
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2021-09-01",
+        "actual_hcp": 66.71,
+        "pred_hcp": 65.15,
+        "naive_hcp": 66.99
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2021-09-01",
+        "actual_hcp": 63.39,
+        "pred_hcp": 60.71,
+        "naive_hcp": 63.8
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2021-09-01",
+        "actual_hcp": 54.0,
+        "pred_hcp": 54.99,
+        "naive_hcp": 54.82
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2021-09-01",
+        "actual_hcp": 52.98,
+        "pred_hcp": 52.67,
+        "naive_hcp": 53.48
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2021-09-01",
+        "actual_hcp": 46.56,
+        "pred_hcp": 43.84,
+        "naive_hcp": 43.96
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2021-09-01",
+        "actual_hcp": 42.4,
+        "pred_hcp": 41.43,
+        "naive_hcp": 43.71
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2021-10-01",
+        "actual_hcp": 72.92,
+        "pred_hcp": 71.99,
+        "naive_hcp": 73.59
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2021-10-01",
+        "actual_hcp": 69.89,
+        "pred_hcp": 67.67,
+        "naive_hcp": 70.86
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2021-10-01",
+        "actual_hcp": 63.37,
+        "pred_hcp": 65.79,
+        "naive_hcp": 66.78
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2021-10-01",
+        "actual_hcp": 59.76,
+        "pred_hcp": 60.44,
+        "naive_hcp": 65.2
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2021-10-01",
+        "actual_hcp": 52.07,
+        "pred_hcp": 54.58,
+        "naive_hcp": 55.88
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2021-10-01",
+        "actual_hcp": 52.24,
+        "pred_hcp": 52.6,
+        "naive_hcp": 53.13
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2021-10-01",
+        "actual_hcp": 43.16,
+        "pred_hcp": 42.37,
+        "naive_hcp": 44.17
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2021-10-01",
+        "actual_hcp": 36.86,
+        "pred_hcp": 37.48,
+        "naive_hcp": 44.73
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2021-11-01",
+        "actual_hcp": 73.83,
+        "pred_hcp": 71.95,
+        "naive_hcp": 75.37
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2021-11-01",
+        "actual_hcp": 70.33,
+        "pred_hcp": 66.64,
+        "naive_hcp": 68.69
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2021-11-01",
+        "actual_hcp": 65.01,
+        "pred_hcp": 66.0,
+        "naive_hcp": 66.71
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2021-11-01",
+        "actual_hcp": 58.12,
+        "pred_hcp": 59.48,
+        "naive_hcp": 63.39
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2021-11-01",
+        "actual_hcp": 52.01,
+        "pred_hcp": 53.92,
+        "naive_hcp": 54.0
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2021-11-01",
+        "actual_hcp": 48.53,
+        "pred_hcp": 51.58,
+        "naive_hcp": 52.98
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2021-11-01",
+        "actual_hcp": 39.87,
+        "pred_hcp": 41.74,
+        "naive_hcp": 46.56
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2021-11-01",
+        "actual_hcp": 37.77,
+        "pred_hcp": 37.75,
+        "naive_hcp": 42.4
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2021-12-01",
+        "actual_hcp": 71.87,
+        "pred_hcp": 72.26,
+        "naive_hcp": 72.92
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2021-12-01",
+        "actual_hcp": 70.64,
+        "pred_hcp": 67.67,
+        "naive_hcp": 69.89
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2021-12-01",
+        "actual_hcp": 63.43,
+        "pred_hcp": 64.55,
+        "naive_hcp": 63.37
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2021-12-01",
+        "actual_hcp": 54.32,
+        "pred_hcp": 58.07,
+        "naive_hcp": 59.76
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2021-12-01",
+        "actual_hcp": 52.16,
+        "pred_hcp": 52.87,
+        "naive_hcp": 52.07
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2021-12-01",
+        "actual_hcp": 46.59,
+        "pred_hcp": 49.95,
+        "naive_hcp": 52.24
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2021-12-01",
+        "actual_hcp": 40.92,
+        "pred_hcp": 41.38,
+        "naive_hcp": 43.16
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2021-12-01",
+        "actual_hcp": 33.98,
+        "pred_hcp": 33.02,
+        "naive_hcp": 36.86
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2022-01-01",
+        "actual_hcp": 72.73,
+        "pred_hcp": 71.72,
+        "naive_hcp": 73.83
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2022-01-01",
+        "actual_hcp": 68.39,
+        "pred_hcp": 67.78,
+        "naive_hcp": 70.33
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2022-01-01",
+        "actual_hcp": 63.22,
+        "pred_hcp": 64.69,
+        "naive_hcp": 65.01
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2022-01-01",
+        "actual_hcp": 54.2,
+        "pred_hcp": 57.43,
+        "naive_hcp": 58.12
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2022-01-01",
+        "actual_hcp": 50.74,
+        "pred_hcp": 53.2,
+        "naive_hcp": 52.01
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2022-01-01",
+        "actual_hcp": 45.8,
+        "pred_hcp": 50.41,
+        "naive_hcp": 48.53
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2022-01-01",
+        "actual_hcp": 38.56,
+        "pred_hcp": 39.94,
+        "naive_hcp": 39.87
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2022-01-01",
+        "actual_hcp": 35.58,
+        "pred_hcp": 35.4,
+        "naive_hcp": 37.77
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2022-02-01",
+        "actual_hcp": 74.74,
+        "pred_hcp": 70.2,
+        "naive_hcp": 71.87
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2022-02-01",
+        "actual_hcp": 69.71,
+        "pred_hcp": 68.66,
+        "naive_hcp": 70.64
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2022-02-01",
+        "actual_hcp": 66.5,
+        "pred_hcp": 65.13,
+        "naive_hcp": 63.43
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2022-02-01",
+        "actual_hcp": 52.55,
+        "pred_hcp": 56.18,
+        "naive_hcp": 54.32
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2022-02-01",
+        "actual_hcp": 50.41,
+        "pred_hcp": 53.07,
+        "naive_hcp": 52.16
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2022-02-01",
+        "actual_hcp": 43.49,
+        "pred_hcp": 49.01,
+        "naive_hcp": 46.59
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2022-02-01",
+        "actual_hcp": 39.0,
+        "pred_hcp": 39.68,
+        "naive_hcp": 40.92
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2022-02-01",
+        "actual_hcp": 35.52,
+        "pred_hcp": 33.85,
+        "naive_hcp": 33.98
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2022-03-01",
+        "actual_hcp": 72.94,
+        "pred_hcp": 71.11,
+        "naive_hcp": 72.73
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2022-03-01",
+        "actual_hcp": 72.97,
+        "pred_hcp": 66.87,
+        "naive_hcp": 68.39
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2022-03-01",
+        "actual_hcp": 65.03,
+        "pred_hcp": 64.75,
+        "naive_hcp": 63.22
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2022-03-01",
+        "actual_hcp": 56.64,
+        "pred_hcp": 56.01,
+        "naive_hcp": 54.2
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2022-03-01",
+        "actual_hcp": 51.48,
+        "pred_hcp": 54.29,
+        "naive_hcp": 50.74
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2022-03-01",
+        "actual_hcp": 45.16,
+        "pred_hcp": 48.61,
+        "naive_hcp": 45.8
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2022-03-01",
+        "actual_hcp": 40.15,
+        "pred_hcp": 38.36,
+        "naive_hcp": 38.56
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2022-03-01",
+        "actual_hcp": 36.58,
+        "pred_hcp": 35.34,
+        "naive_hcp": 35.58
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2022-04-01",
+        "actual_hcp": 72.62,
+        "pred_hcp": 72.68,
+        "naive_hcp": 74.74
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2022-04-01",
+        "actual_hcp": 71.73,
+        "pred_hcp": 68.15,
+        "naive_hcp": 69.71
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2022-04-01",
+        "actual_hcp": 63.96,
+        "pred_hcp": 66.27,
+        "naive_hcp": 66.5
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2022-04-01",
+        "actual_hcp": 57.68,
+        "pred_hcp": 57.03,
+        "naive_hcp": 52.55
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2022-04-01",
+        "actual_hcp": 54.32,
+        "pred_hcp": 53.16,
+        "naive_hcp": 50.41
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2022-04-01",
+        "actual_hcp": 51.21,
+        "pred_hcp": 49.27,
+        "naive_hcp": 43.49
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2022-04-01",
+        "actual_hcp": 40.85,
+        "pred_hcp": 39.03,
+        "naive_hcp": 39.0
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2022-04-01",
+        "actual_hcp": 38.96,
+        "pred_hcp": 36.57,
+        "naive_hcp": 35.52
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2022-05-01",
+        "actual_hcp": 76.98,
+        "pred_hcp": 72.15,
+        "naive_hcp": 72.94
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2022-05-01",
+        "actual_hcp": 72.47,
+        "pred_hcp": 70.96,
+        "naive_hcp": 72.97
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2022-05-01",
+        "actual_hcp": 66.11,
+        "pred_hcp": 66.92,
+        "naive_hcp": 65.03
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2022-05-01",
+        "actual_hcp": 60.91,
+        "pred_hcp": 58.91,
+        "naive_hcp": 56.64
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2022-05-01",
+        "actual_hcp": 54.51,
+        "pred_hcp": 53.75,
+        "naive_hcp": 51.48
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2022-05-01",
+        "actual_hcp": 52.27,
+        "pred_hcp": 49.62,
+        "naive_hcp": 45.16
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2022-05-01",
+        "actual_hcp": 42.44,
+        "pred_hcp": 40.26,
+        "naive_hcp": 40.15
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2022-05-01",
+        "actual_hcp": 38.88,
+        "pred_hcp": 37.25,
+        "naive_hcp": 36.58
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2022-06-01",
+        "actual_hcp": 75.83,
+        "pred_hcp": 72.31,
+        "naive_hcp": 72.62
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2022-06-01",
+        "actual_hcp": 74.33,
+        "pred_hcp": 70.15,
+        "naive_hcp": 71.73
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2022-06-01",
+        "actual_hcp": 66.66,
+        "pred_hcp": 64.84,
+        "naive_hcp": 63.96
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2022-06-01",
+        "actual_hcp": 66.44,
+        "pred_hcp": 59.22,
+        "naive_hcp": 57.68
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2022-06-01",
+        "actual_hcp": 55.84,
+        "pred_hcp": 54.63,
+        "naive_hcp": 54.32
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2022-06-01",
+        "actual_hcp": 54.64,
+        "pred_hcp": 51.84,
+        "naive_hcp": 51.21
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2022-06-01",
+        "actual_hcp": 43.25,
+        "pred_hcp": 42.2,
+        "naive_hcp": 40.85
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2022-06-01",
+        "actual_hcp": 39.02,
+        "pred_hcp": 37.58,
+        "naive_hcp": 38.96
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2022-07-01",
+        "actual_hcp": 76.59,
+        "pred_hcp": 73.78,
+        "naive_hcp": 76.98
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2022-07-01",
+        "actual_hcp": 75.71,
+        "pred_hcp": 69.8,
+        "naive_hcp": 72.47
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2022-07-01",
+        "actual_hcp": 67.25,
+        "pred_hcp": 65.88,
+        "naive_hcp": 66.11
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2022-07-01",
+        "actual_hcp": 66.64,
+        "pred_hcp": 60.08,
+        "naive_hcp": 60.91
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2022-07-01",
+        "actual_hcp": 58.93,
+        "pred_hcp": 55.47,
+        "naive_hcp": 54.51
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2022-07-01",
+        "actual_hcp": 55.92,
+        "pred_hcp": 52.74,
+        "naive_hcp": 52.27
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2022-07-01",
+        "actual_hcp": 46.94,
+        "pred_hcp": 44.32,
+        "naive_hcp": 42.44
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2022-07-01",
+        "actual_hcp": 37.56,
+        "pred_hcp": 38.28,
+        "naive_hcp": 38.88
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2022-08-01",
+        "actual_hcp": 78.28,
+        "pred_hcp": 72.56,
+        "naive_hcp": 75.83
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2022-08-01",
+        "actual_hcp": 74.83,
+        "pred_hcp": 72.06,
+        "naive_hcp": 74.33
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2022-08-01",
+        "actual_hcp": 69.48,
+        "pred_hcp": 66.48,
+        "naive_hcp": 66.66
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2022-08-01",
+        "actual_hcp": 64.41,
+        "pred_hcp": 61.01,
+        "naive_hcp": 66.44
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2022-08-01",
+        "actual_hcp": 55.75,
+        "pred_hcp": 55.75,
+        "naive_hcp": 55.84
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2022-08-01",
+        "actual_hcp": 55.28,
+        "pred_hcp": 54.63,
+        "naive_hcp": 54.64
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2022-08-01",
+        "actual_hcp": 47.47,
+        "pred_hcp": 43.34,
+        "naive_hcp": 43.25
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2022-08-01",
+        "actual_hcp": 41.93,
+        "pred_hcp": 37.64,
+        "naive_hcp": 39.02
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2022-09-01",
+        "actual_hcp": 77.67,
+        "pred_hcp": 74.27,
+        "naive_hcp": 76.59
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2022-09-01",
+        "actual_hcp": 75.31,
+        "pred_hcp": 72.74,
+        "naive_hcp": 75.71
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2022-09-01",
+        "actual_hcp": 68.75,
+        "pred_hcp": 68.01,
+        "naive_hcp": 67.25
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2022-09-01",
+        "actual_hcp": 65.51,
+        "pred_hcp": 62.8,
+        "naive_hcp": 66.64
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2022-09-01",
+        "actual_hcp": 56.79,
+        "pred_hcp": 57.27,
+        "naive_hcp": 58.93
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2022-09-01",
+        "actual_hcp": 53.93,
+        "pred_hcp": 54.92,
+        "naive_hcp": 55.92
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2022-09-01",
+        "actual_hcp": 45.29,
+        "pred_hcp": 43.32,
+        "naive_hcp": 46.94
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2022-09-01",
+        "actual_hcp": 39.0,
+        "pred_hcp": 36.31,
+        "naive_hcp": 37.56
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2022-10-01",
+        "actual_hcp": 76.39,
+        "pred_hcp": 74.87,
+        "naive_hcp": 78.28
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2022-10-01",
+        "actual_hcp": 74.73,
+        "pred_hcp": 72.43,
+        "naive_hcp": 74.83
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2022-10-01",
+        "actual_hcp": 67.2,
+        "pred_hcp": 68.31,
+        "naive_hcp": 69.48
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2022-10-01",
+        "actual_hcp": 62.15,
+        "pred_hcp": 63.21,
+        "naive_hcp": 64.41
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2022-10-01",
+        "actual_hcp": 57.08,
+        "pred_hcp": 57.15,
+        "naive_hcp": 55.75
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2022-10-01",
+        "actual_hcp": 52.91,
+        "pred_hcp": 54.46,
+        "naive_hcp": 55.28
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2022-10-01",
+        "actual_hcp": 42.81,
+        "pred_hcp": 44.15,
+        "naive_hcp": 47.47
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2022-10-01",
+        "actual_hcp": 42.05,
+        "pred_hcp": 41.75,
+        "naive_hcp": 41.93
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2022-11-01",
+        "actual_hcp": 77.03,
+        "pred_hcp": 76.12,
+        "naive_hcp": 77.67
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2022-11-01",
+        "actual_hcp": 74.72,
+        "pred_hcp": 72.48,
+        "naive_hcp": 75.31
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2022-11-01",
+        "actual_hcp": 64.86,
+        "pred_hcp": 67.56,
+        "naive_hcp": 68.75
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2022-11-01",
+        "actual_hcp": 60.47,
+        "pred_hcp": 63.12,
+        "naive_hcp": 65.51
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2022-11-01",
+        "actual_hcp": 54.16,
+        "pred_hcp": 56.53,
+        "naive_hcp": 56.79
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2022-11-01",
+        "actual_hcp": 53.06,
+        "pred_hcp": 53.91,
+        "naive_hcp": 53.93
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2022-11-01",
+        "actual_hcp": 42.02,
+        "pred_hcp": 43.33,
+        "naive_hcp": 45.29
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2022-11-01",
+        "actual_hcp": 38.2,
+        "pred_hcp": 39.68,
+        "naive_hcp": 39.0
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2022-12-01",
+        "actual_hcp": 74.22,
+        "pred_hcp": 75.54,
+        "naive_hcp": 76.39
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2022-12-01",
+        "actual_hcp": 75.26,
+        "pred_hcp": 71.69,
+        "naive_hcp": 74.73
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2022-12-01",
+        "actual_hcp": 64.26,
+        "pred_hcp": 66.7,
+        "naive_hcp": 67.2
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2022-12-01",
+        "actual_hcp": 56.1,
+        "pred_hcp": 60.59,
+        "naive_hcp": 62.15
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2022-12-01",
+        "actual_hcp": 52.2,
+        "pred_hcp": 56.77,
+        "naive_hcp": 57.08
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2022-12-01",
+        "actual_hcp": 50.95,
+        "pred_hcp": 53.34,
+        "naive_hcp": 52.91
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2022-12-01",
+        "actual_hcp": 40.34,
+        "pred_hcp": 40.19,
+        "naive_hcp": 42.81
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2022-12-01",
+        "actual_hcp": 38.79,
+        "pred_hcp": 41.6,
+        "naive_hcp": 42.05
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2023-01-01",
+        "actual_hcp": 75.52,
+        "pred_hcp": 73.52,
+        "naive_hcp": 77.03
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2023-01-01",
+        "actual_hcp": 73.84,
+        "pred_hcp": 72.66,
+        "naive_hcp": 74.72
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2023-01-01",
+        "actual_hcp": 65.74,
+        "pred_hcp": 66.3,
+        "naive_hcp": 64.86
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2023-01-01",
+        "actual_hcp": 54.86,
+        "pred_hcp": 59.11,
+        "naive_hcp": 60.47
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2023-01-01",
+        "actual_hcp": 50.17,
+        "pred_hcp": 53.71,
+        "naive_hcp": 54.16
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2023-01-01",
+        "actual_hcp": 45.83,
+        "pred_hcp": 53.24,
+        "naive_hcp": 53.06
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2023-01-01",
+        "actual_hcp": 37.74,
+        "pred_hcp": 40.13,
+        "naive_hcp": 42.02
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2023-01-01",
+        "actual_hcp": 37.43,
+        "pred_hcp": 39.18,
+        "naive_hcp": 38.2
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2023-02-01",
+        "actual_hcp": 77.61,
+        "pred_hcp": 73.77,
+        "naive_hcp": 74.22
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2023-02-01",
+        "actual_hcp": 74.4,
+        "pred_hcp": 72.93,
+        "naive_hcp": 75.26
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2023-02-01",
+        "actual_hcp": 67.64,
+        "pred_hcp": 65.23,
+        "naive_hcp": 64.26
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2023-02-01",
+        "actual_hcp": 53.89,
+        "pred_hcp": 57.62,
+        "naive_hcp": 56.1
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2023-02-01",
+        "actual_hcp": 54.54,
+        "pred_hcp": 54.82,
+        "naive_hcp": 52.2
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2023-02-01",
+        "actual_hcp": 47.69,
+        "pred_hcp": 52.31,
+        "naive_hcp": 50.95
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2023-02-01",
+        "actual_hcp": 37.72,
+        "pred_hcp": 42.18,
+        "naive_hcp": 40.34
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2023-02-01",
+        "actual_hcp": 33.48,
+        "pred_hcp": 35.09,
+        "naive_hcp": 38.79
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2023-03-01",
+        "actual_hcp": 76.54,
+        "pred_hcp": 74.66,
+        "naive_hcp": 75.52
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2023-03-01",
+        "actual_hcp": 74.71,
+        "pred_hcp": 72.25,
+        "naive_hcp": 73.84
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2023-03-01",
+        "actual_hcp": 66.22,
+        "pred_hcp": 66.93,
+        "naive_hcp": 65.74
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2023-03-01",
+        "actual_hcp": 59.53,
+        "pred_hcp": 58.1,
+        "naive_hcp": 54.86
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2023-03-01",
+        "actual_hcp": 52.63,
+        "pred_hcp": 53.98,
+        "naive_hcp": 50.17
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2023-03-01",
+        "actual_hcp": 47.17,
+        "pred_hcp": 49.03,
+        "naive_hcp": 45.83
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2023-03-01",
+        "actual_hcp": 40.0,
+        "pred_hcp": 37.29,
+        "naive_hcp": 37.74
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2023-03-01",
+        "actual_hcp": 33.21,
+        "pred_hcp": 34.98,
+        "naive_hcp": 37.43
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2023-04-01",
+        "actual_hcp": 77.03,
+        "pred_hcp": 74.77,
+        "naive_hcp": 77.61
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2023-04-01",
+        "actual_hcp": 75.34,
+        "pred_hcp": 73.0,
+        "naive_hcp": 74.4
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2023-04-01",
+        "actual_hcp": 67.17,
+        "pred_hcp": 67.78,
+        "naive_hcp": 67.64
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2023-04-01",
+        "actual_hcp": 58.29,
+        "pred_hcp": 57.3,
+        "naive_hcp": 53.89
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2023-04-01",
+        "actual_hcp": 55.1,
+        "pred_hcp": 56.07,
+        "naive_hcp": 54.54
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2023-04-01",
+        "actual_hcp": 51.98,
+        "pred_hcp": 50.6,
+        "naive_hcp": 47.69
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2023-04-01",
+        "actual_hcp": 39.81,
+        "pred_hcp": 38.14,
+        "naive_hcp": 37.72
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2023-04-01",
+        "actual_hcp": 38.85,
+        "pred_hcp": 36.62,
+        "naive_hcp": 33.48
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2023-05-01",
+        "actual_hcp": 80.17,
+        "pred_hcp": 75.63,
+        "naive_hcp": 76.54
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2023-05-01",
+        "actual_hcp": 76.37,
+        "pred_hcp": 73.02,
+        "naive_hcp": 74.71
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2023-05-01",
+        "actual_hcp": 68.26,
+        "pred_hcp": 67.49,
+        "naive_hcp": 66.22
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2023-05-01",
+        "actual_hcp": 64.47,
+        "pred_hcp": 59.35,
+        "naive_hcp": 59.53
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2023-05-01",
+        "actual_hcp": 57.96,
+        "pred_hcp": 56.79,
+        "naive_hcp": 52.63
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2023-05-01",
+        "actual_hcp": 51.77,
+        "pred_hcp": 50.17,
+        "naive_hcp": 47.17
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2023-05-01",
+        "actual_hcp": 42.83,
+        "pred_hcp": 41.42,
+        "naive_hcp": 40.0
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2023-05-01",
+        "actual_hcp": 37.26,
+        "pred_hcp": 34.43,
+        "naive_hcp": 33.21
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2023-06-01",
+        "actual_hcp": 78.38,
+        "pred_hcp": 75.75,
+        "naive_hcp": 77.03
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2023-06-01",
+        "actual_hcp": 78.95,
+        "pred_hcp": 75.1,
+        "naive_hcp": 75.34
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2023-06-01",
+        "actual_hcp": 71.32,
+        "pred_hcp": 68.72,
+        "naive_hcp": 67.17
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2023-06-01",
+        "actual_hcp": 66.12,
+        "pred_hcp": 60.27,
+        "naive_hcp": 58.29
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2023-06-01",
+        "actual_hcp": 56.84,
+        "pred_hcp": 56.85,
+        "naive_hcp": 55.1
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2023-06-01",
+        "actual_hcp": 55.53,
+        "pred_hcp": 53.41,
+        "naive_hcp": 51.98
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2023-06-01",
+        "actual_hcp": 45.86,
+        "pred_hcp": 42.11,
+        "naive_hcp": 39.81
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2023-06-01",
+        "actual_hcp": 38.94,
+        "pred_hcp": 38.04,
+        "naive_hcp": 38.85
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2023-07-01",
+        "actual_hcp": 80.92,
+        "pred_hcp": 77.39,
+        "naive_hcp": 80.17
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2023-07-01",
+        "actual_hcp": 79.52,
+        "pred_hcp": 74.76,
+        "naive_hcp": 76.37
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2023-07-01",
+        "actual_hcp": 72.36,
+        "pred_hcp": 69.5,
+        "naive_hcp": 68.26
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2023-07-01",
+        "actual_hcp": 69.35,
+        "pred_hcp": 63.63,
+        "naive_hcp": 64.47
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2023-07-01",
+        "actual_hcp": 58.73,
+        "pred_hcp": 59.02,
+        "naive_hcp": 57.96
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2023-07-01",
+        "actual_hcp": 56.92,
+        "pred_hcp": 52.48,
+        "naive_hcp": 51.77
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2023-07-01",
+        "actual_hcp": 48.39,
+        "pred_hcp": 43.28,
+        "naive_hcp": 42.83
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2023-07-01",
+        "actual_hcp": 39.11,
+        "pred_hcp": 37.55,
+        "naive_hcp": 37.26
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2023-08-01",
+        "actual_hcp": 80.44,
+        "pred_hcp": 77.43,
+        "naive_hcp": 78.38
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2023-08-01",
+        "actual_hcp": 79.79,
+        "pred_hcp": 76.67,
+        "naive_hcp": 78.95
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2023-08-01",
+        "actual_hcp": 71.34,
+        "pred_hcp": 71.95,
+        "naive_hcp": 71.32
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2023-08-01",
+        "actual_hcp": 70.11,
+        "pred_hcp": 64.26,
+        "naive_hcp": 66.12
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2023-08-01",
+        "actual_hcp": 58.33,
+        "pred_hcp": 56.9,
+        "naive_hcp": 56.84
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2023-08-01",
+        "actual_hcp": 57.34,
+        "pred_hcp": 56.04,
+        "naive_hcp": 55.53
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2023-08-01",
+        "actual_hcp": 46.55,
+        "pred_hcp": 45.41,
+        "naive_hcp": 45.86
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2023-08-01",
+        "actual_hcp": 42.87,
+        "pred_hcp": 41.75,
+        "naive_hcp": 38.94
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2023-09-01",
+        "actual_hcp": 79.88,
+        "pred_hcp": 78.59,
+        "naive_hcp": 80.92
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2023-09-01",
+        "actual_hcp": 80.34,
+        "pred_hcp": 77.03,
+        "naive_hcp": 79.52
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2023-09-01",
+        "actual_hcp": 69.38,
+        "pred_hcp": 71.31,
+        "naive_hcp": 72.36
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2023-09-01",
+        "actual_hcp": 66.33,
+        "pred_hcp": 65.35,
+        "naive_hcp": 69.35
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2023-09-01",
+        "actual_hcp": 55.03,
+        "pred_hcp": 57.07,
+        "naive_hcp": 58.73
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2023-09-01",
+        "actual_hcp": 54.97,
+        "pred_hcp": 56.89,
+        "naive_hcp": 56.92
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2023-09-01",
+        "actual_hcp": 44.83,
+        "pred_hcp": 45.29,
+        "naive_hcp": 48.39
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2023-09-01",
+        "actual_hcp": 41.71,
+        "pred_hcp": 40.41,
+        "naive_hcp": 39.11
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2023-10-01",
+        "actual_hcp": 79.97,
+        "pred_hcp": 77.3,
+        "naive_hcp": 80.44
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2023-10-01",
+        "actual_hcp": 79.51,
+        "pred_hcp": 76.36,
+        "naive_hcp": 79.79
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2023-10-01",
+        "actual_hcp": 69.54,
+        "pred_hcp": 70.75,
+        "naive_hcp": 71.34
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2023-10-01",
+        "actual_hcp": 65.11,
+        "pred_hcp": 67.16,
+        "naive_hcp": 70.11
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2023-10-01",
+        "actual_hcp": 58.71,
+        "pred_hcp": 56.49,
+        "naive_hcp": 58.33
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2023-10-01",
+        "actual_hcp": 54.03,
+        "pred_hcp": 56.84,
+        "naive_hcp": 57.34
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2023-10-01",
+        "actual_hcp": 43.88,
+        "pred_hcp": 43.18,
+        "naive_hcp": 46.55
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2023-10-01",
+        "actual_hcp": 40.22,
+        "pred_hcp": 39.35,
+        "naive_hcp": 42.87
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2023-11-01",
+        "actual_hcp": 78.77,
+        "pred_hcp": 78.03,
+        "naive_hcp": 79.88
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2023-11-01",
+        "actual_hcp": 80.2,
+        "pred_hcp": 77.51,
+        "naive_hcp": 80.34
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2023-11-01",
+        "actual_hcp": 70.51,
+        "pred_hcp": 69.94,
+        "naive_hcp": 69.38
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2023-11-01",
+        "actual_hcp": 62.01,
+        "pred_hcp": 64.42,
+        "naive_hcp": 66.33
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2023-11-01",
+        "actual_hcp": 54.57,
+        "pred_hcp": 56.29,
+        "naive_hcp": 55.03
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2023-11-01",
+        "actual_hcp": 51.3,
+        "pred_hcp": 53.61,
+        "naive_hcp": 54.97
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2023-11-01",
+        "actual_hcp": 42.95,
+        "pred_hcp": 45.38,
+        "naive_hcp": 44.83
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2023-11-01",
+        "actual_hcp": 35.59,
+        "pred_hcp": 34.96,
+        "naive_hcp": 41.71
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2023-12-01",
+        "actual_hcp": 78.28,
+        "pred_hcp": 77.63,
+        "naive_hcp": 79.97
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2023-12-01",
+        "actual_hcp": 78.36,
+        "pred_hcp": 78.56,
+        "naive_hcp": 79.51
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2023-12-01",
+        "actual_hcp": 67.32,
+        "pred_hcp": 69.33,
+        "naive_hcp": 69.54
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2023-12-01",
+        "actual_hcp": 57.42,
+        "pred_hcp": 60.82,
+        "naive_hcp": 65.11
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2023-12-01",
+        "actual_hcp": 54.59,
+        "pred_hcp": 58.78,
+        "naive_hcp": 58.71
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2023-12-01",
+        "actual_hcp": 50.39,
+        "pred_hcp": 52.68,
+        "naive_hcp": 54.03
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2023-12-01",
+        "actual_hcp": 41.66,
+        "pred_hcp": 42.2,
+        "naive_hcp": 43.88
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2023-12-01",
+        "actual_hcp": 32.42,
+        "pred_hcp": 37.1,
+        "naive_hcp": 40.22
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2024-01-01",
+        "actual_hcp": 77.32,
+        "pred_hcp": 78.05,
+        "naive_hcp": 78.77
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2024-01-01",
+        "actual_hcp": 79.35,
+        "pred_hcp": 77.13,
+        "naive_hcp": 80.2
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2024-01-01",
+        "actual_hcp": 70.07,
+        "pred_hcp": 71.0,
+        "naive_hcp": 70.51
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2024-01-01",
+        "actual_hcp": 55.13,
+        "pred_hcp": 59.01,
+        "naive_hcp": 62.01
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2024-01-01",
+        "actual_hcp": 53.78,
+        "pred_hcp": 57.09,
+        "naive_hcp": 54.57
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2024-01-01",
+        "actual_hcp": 49.58,
+        "pred_hcp": 53.15,
+        "naive_hcp": 51.3
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2024-01-01",
+        "actual_hcp": 37.59,
+        "pred_hcp": 40.4,
+        "naive_hcp": 42.95
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2024-01-01",
+        "actual_hcp": 34.89,
+        "pred_hcp": 36.05,
+        "naive_hcp": 35.59
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2024-02-01",
+        "actual_hcp": 80.73,
+        "pred_hcp": 77.03,
+        "naive_hcp": 78.28
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2024-02-01",
+        "actual_hcp": 80.86,
+        "pred_hcp": 76.14,
+        "naive_hcp": 78.36
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2024-02-01",
+        "actual_hcp": 65.74,
+        "pred_hcp": 69.7,
+        "naive_hcp": 67.32
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2024-02-01",
+        "actual_hcp": 56.8,
+        "pred_hcp": 57.61,
+        "naive_hcp": 57.42
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2024-02-01",
+        "actual_hcp": 53.7,
+        "pred_hcp": 57.0,
+        "naive_hcp": 54.59
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2024-02-01",
+        "actual_hcp": 47.11,
+        "pred_hcp": 50.09,
+        "naive_hcp": 50.39
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2024-02-01",
+        "actual_hcp": 36.13,
+        "pred_hcp": 40.67,
+        "naive_hcp": 41.66
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2024-02-01",
+        "actual_hcp": 36.24,
+        "pred_hcp": 34.55,
+        "naive_hcp": 32.42
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2024-03-01",
+        "actual_hcp": 81.83,
+        "pred_hcp": 77.1,
+        "naive_hcp": 77.32
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2024-03-01",
+        "actual_hcp": 79.29,
+        "pred_hcp": 77.76,
+        "naive_hcp": 79.35
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2024-03-01",
+        "actual_hcp": 70.07,
+        "pred_hcp": 70.54,
+        "naive_hcp": 70.07
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2024-03-01",
+        "actual_hcp": 60.07,
+        "pred_hcp": 58.75,
+        "naive_hcp": 55.13
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2024-03-01",
+        "actual_hcp": 54.42,
+        "pred_hcp": 56.82,
+        "naive_hcp": 53.78
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2024-03-01",
+        "actual_hcp": 47.01,
+        "pred_hcp": 50.4,
+        "naive_hcp": 49.58
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2024-03-01",
+        "actual_hcp": 40.92,
+        "pred_hcp": 39.48,
+        "naive_hcp": 37.59
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2024-03-01",
+        "actual_hcp": 33.84,
+        "pred_hcp": 35.13,
+        "naive_hcp": 34.89
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2024-04-01",
+        "actual_hcp": 80.99,
+        "pred_hcp": 78.69,
+        "naive_hcp": 80.73
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2024-04-01",
+        "actual_hcp": 79.94,
+        "pred_hcp": 77.32,
+        "naive_hcp": 80.86
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2024-04-01",
+        "actual_hcp": 70.22,
+        "pred_hcp": 68.53,
+        "naive_hcp": 65.74
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2024-04-01",
+        "actual_hcp": 59.68,
+        "pred_hcp": 58.73,
+        "naive_hcp": 56.8
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2024-04-01",
+        "actual_hcp": 58.69,
+        "pred_hcp": 56.15,
+        "naive_hcp": 53.7
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2024-04-01",
+        "actual_hcp": 52.54,
+        "pred_hcp": 51.31,
+        "naive_hcp": 47.11
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2024-04-01",
+        "actual_hcp": 43.65,
+        "pred_hcp": 40.61,
+        "naive_hcp": 36.13
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2024-04-01",
+        "actual_hcp": 33.18,
+        "pred_hcp": 32.94,
+        "naive_hcp": 36.24
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2024-05-01",
+        "actual_hcp": 81.03,
+        "pred_hcp": 78.92,
+        "naive_hcp": 81.83
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2024-05-01",
+        "actual_hcp": 84.62,
+        "pred_hcp": 76.8,
+        "naive_hcp": 79.29
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2024-05-01",
+        "actual_hcp": 71.04,
+        "pred_hcp": 70.6,
+        "naive_hcp": 70.07
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2024-05-01",
+        "actual_hcp": 65.49,
+        "pred_hcp": 61.4,
+        "naive_hcp": 60.07
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2024-05-01",
+        "actual_hcp": 58.51,
+        "pred_hcp": 56.55,
+        "naive_hcp": 54.42
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2024-05-01",
+        "actual_hcp": 54.83,
+        "pred_hcp": 52.09,
+        "naive_hcp": 47.01
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2024-05-01",
+        "actual_hcp": 41.37,
+        "pred_hcp": 42.05,
+        "naive_hcp": 40.92
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2024-05-01",
+        "actual_hcp": 34.53,
+        "pred_hcp": 35.53,
+        "naive_hcp": 33.84
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2024-06-01",
+        "actual_hcp": 84.03,
+        "pred_hcp": 79.58,
+        "naive_hcp": 80.99
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2024-06-01",
+        "actual_hcp": 84.67,
+        "pred_hcp": 77.77,
+        "naive_hcp": 79.94
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2024-06-01",
+        "actual_hcp": 73.78,
+        "pred_hcp": 71.46,
+        "naive_hcp": 70.22
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2024-06-01",
+        "actual_hcp": 70.39,
+        "pred_hcp": 61.67,
+        "naive_hcp": 59.68
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2024-06-01",
+        "actual_hcp": 58.5,
+        "pred_hcp": 58.61,
+        "naive_hcp": 58.69
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2024-06-01",
+        "actual_hcp": 56.72,
+        "pred_hcp": 53.19,
+        "naive_hcp": 52.54
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2024-06-01",
+        "actual_hcp": 42.09,
+        "pred_hcp": 41.06,
+        "naive_hcp": 43.65
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2024-06-01",
+        "actual_hcp": 38.18,
+        "pred_hcp": 36.89,
+        "naive_hcp": 33.18
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2024-07-01",
+        "actual_hcp": 84.17,
+        "pred_hcp": 78.4,
+        "naive_hcp": 81.03
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2024-07-01",
+        "actual_hcp": 87.23,
+        "pred_hcp": 81.17,
+        "naive_hcp": 84.62
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2024-07-01",
+        "actual_hcp": 72.68,
+        "pred_hcp": 72.5,
+        "naive_hcp": 71.04
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2024-07-01",
+        "actual_hcp": 70.13,
+        "pred_hcp": 64.66,
+        "naive_hcp": 65.49
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2024-07-01",
+        "actual_hcp": 60.51,
+        "pred_hcp": 59.09,
+        "naive_hcp": 58.51
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2024-07-01",
+        "actual_hcp": 59.17,
+        "pred_hcp": 55.58,
+        "naive_hcp": 54.83
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2024-07-01",
+        "actual_hcp": 47.29,
+        "pred_hcp": 40.17,
+        "naive_hcp": 41.37
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2024-07-01",
+        "actual_hcp": 37.17,
+        "pred_hcp": 34.06,
+        "naive_hcp": 34.53
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2024-08-01",
+        "actual_hcp": 85.04,
+        "pred_hcp": 79.21,
+        "naive_hcp": 84.03
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2024-08-01",
+        "actual_hcp": 86.42,
+        "pred_hcp": 79.73,
+        "naive_hcp": 84.67
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2024-08-01",
+        "actual_hcp": 74.61,
+        "pred_hcp": 71.2,
+        "naive_hcp": 73.78
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2024-08-01",
+        "actual_hcp": 68.89,
+        "pred_hcp": 68.18,
+        "naive_hcp": 70.39
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2024-08-01",
+        "actual_hcp": 58.9,
+        "pred_hcp": 59.13,
+        "naive_hcp": 58.5
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2024-08-01",
+        "actual_hcp": 55.29,
+        "pred_hcp": 55.93,
+        "naive_hcp": 56.72
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2024-08-01",
+        "actual_hcp": 46.11,
+        "pred_hcp": 43.96,
+        "naive_hcp": 42.09
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2024-08-01",
+        "actual_hcp": 33.61,
+        "pred_hcp": 33.28,
+        "naive_hcp": 38.18
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2024-09-01",
+        "actual_hcp": 85.19,
+        "pred_hcp": 81.85,
+        "naive_hcp": 84.17
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2024-09-01",
+        "actual_hcp": 85.21,
+        "pred_hcp": 83.38,
+        "naive_hcp": 87.23
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2024-09-01",
+        "actual_hcp": 73.41,
+        "pred_hcp": 72.07,
+        "naive_hcp": 72.68
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2024-09-01",
+        "actual_hcp": 69.07,
+        "pred_hcp": 67.85,
+        "naive_hcp": 70.13
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2024-09-01",
+        "actual_hcp": 59.37,
+        "pred_hcp": 59.35,
+        "naive_hcp": 60.51
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2024-09-01",
+        "actual_hcp": 56.47,
+        "pred_hcp": 58.98,
+        "naive_hcp": 59.17
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2024-09-01",
+        "actual_hcp": 43.63,
+        "pred_hcp": 44.95,
+        "naive_hcp": 47.29
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2024-09-01",
+        "actual_hcp": 35.29,
+        "pred_hcp": 34.78,
+        "naive_hcp": 37.17
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2024-10-01",
+        "actual_hcp": 84.88,
+        "pred_hcp": 82.77,
+        "naive_hcp": 85.04
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2024-10-01",
+        "actual_hcp": 87.21,
+        "pred_hcp": 84.35,
+        "naive_hcp": 86.42
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2024-10-01",
+        "actual_hcp": 73.19,
+        "pred_hcp": 73.37,
+        "naive_hcp": 74.61
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2024-10-01",
+        "actual_hcp": 66.79,
+        "pred_hcp": 67.05,
+        "naive_hcp": 68.89
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2024-10-01",
+        "actual_hcp": 58.2,
+        "pred_hcp": 59.21,
+        "naive_hcp": 58.9
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2024-10-01",
+        "actual_hcp": 55.55,
+        "pred_hcp": 56.96,
+        "naive_hcp": 55.29
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2024-10-01",
+        "actual_hcp": 41.72,
+        "pred_hcp": 42.4,
+        "naive_hcp": 46.11
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2024-10-01",
+        "actual_hcp": 33.45,
+        "pred_hcp": 28.92,
+        "naive_hcp": 33.61
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2024-11-01",
+        "actual_hcp": 85.44,
+        "pred_hcp": 82.95,
+        "naive_hcp": 85.19
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2024-11-01",
+        "actual_hcp": 85.1,
+        "pred_hcp": 84.69,
+        "naive_hcp": 85.21
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2024-11-01",
+        "actual_hcp": 69.95,
+        "pred_hcp": 73.41,
+        "naive_hcp": 73.41
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2024-11-01",
+        "actual_hcp": 61.83,
+        "pred_hcp": 67.23,
+        "naive_hcp": 69.07
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2024-11-01",
+        "actual_hcp": 57.95,
+        "pred_hcp": 60.55,
+        "naive_hcp": 59.37
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2024-11-01",
+        "actual_hcp": 53.81,
+        "pred_hcp": 56.35,
+        "naive_hcp": 56.47
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2024-11-01",
+        "actual_hcp": 37.17,
+        "pred_hcp": 40.89,
+        "naive_hcp": 43.63
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2024-11-01",
+        "actual_hcp": 35.71,
+        "pred_hcp": 33.75,
+        "naive_hcp": 35.29
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2024-12-01",
+        "actual_hcp": 83.58,
+        "pred_hcp": 82.2,
+        "naive_hcp": 84.88
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2024-12-01",
+        "actual_hcp": 84.19,
+        "pred_hcp": 85.48,
+        "naive_hcp": 87.21
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2024-12-01",
+        "actual_hcp": 71.27,
+        "pred_hcp": 73.05,
+        "naive_hcp": 73.19
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2024-12-01",
+        "actual_hcp": 61.72,
+        "pred_hcp": 64.95,
+        "naive_hcp": 66.79
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2024-12-01",
+        "actual_hcp": 56.34,
+        "pred_hcp": 59.96,
+        "naive_hcp": 58.2
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2024-12-01",
+        "actual_hcp": 50.61,
+        "pred_hcp": 55.39,
+        "naive_hcp": 55.55
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2024-12-01",
+        "actual_hcp": 37.75,
+        "pred_hcp": 40.33,
+        "naive_hcp": 41.72
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2024-12-01",
+        "actual_hcp": 31.16,
+        "pred_hcp": 31.55,
+        "naive_hcp": 33.45
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2025-01-01",
+        "actual_hcp": 82.04,
+        "pred_hcp": 83.73,
+        "naive_hcp": 85.44
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2025-01-01",
+        "actual_hcp": 87.33,
+        "pred_hcp": 84.28,
+        "naive_hcp": 85.1
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2025-01-01",
+        "actual_hcp": 68.26,
+        "pred_hcp": 71.65,
+        "naive_hcp": 69.95
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2025-01-01",
+        "actual_hcp": 58.91,
+        "pred_hcp": 62.14,
+        "naive_hcp": 61.83
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2025-01-01",
+        "actual_hcp": 55.7,
+        "pred_hcp": 58.51,
+        "naive_hcp": 57.95
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2025-01-01",
+        "actual_hcp": 51.28,
+        "pred_hcp": 52.89,
+        "naive_hcp": 53.81
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2025-01-01",
+        "actual_hcp": 38.11,
+        "pred_hcp": 34.65,
+        "naive_hcp": 37.17
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2025-01-01",
+        "actual_hcp": 26.73,
+        "pred_hcp": 31.12,
+        "naive_hcp": 35.71
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2025-02-01",
+        "actual_hcp": 85.11,
+        "pred_hcp": 81.84,
+        "naive_hcp": 83.58
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2025-02-01",
+        "actual_hcp": 86.47,
+        "pred_hcp": 83.53,
+        "naive_hcp": 84.19
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2025-02-01",
+        "actual_hcp": 68.91,
+        "pred_hcp": 71.68,
+        "naive_hcp": 71.27
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2025-02-01",
+        "actual_hcp": 59.78,
+        "pred_hcp": 60.76,
+        "naive_hcp": 61.72
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2025-02-01",
+        "actual_hcp": 52.1,
+        "pred_hcp": 56.99,
+        "naive_hcp": 56.34
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2025-02-01",
+        "actual_hcp": 51.37,
+        "pred_hcp": 52.4,
+        "naive_hcp": 50.61
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2025-02-01",
+        "actual_hcp": 33.93,
+        "pred_hcp": 35.06,
+        "naive_hcp": 37.75
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2025-02-01",
+        "actual_hcp": 27.46,
+        "pred_hcp": 30.31,
+        "naive_hcp": 31.16
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2025-03-01",
+        "actual_hcp": 84.82,
+        "pred_hcp": 83.07,
+        "naive_hcp": 82.04
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2025-03-01",
+        "actual_hcp": 86.58,
+        "pred_hcp": 86.12,
+        "naive_hcp": 87.33
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2025-03-01",
+        "actual_hcp": 70.99,
+        "pred_hcp": 70.24,
+        "naive_hcp": 68.26
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2025-03-01",
+        "actual_hcp": 58.87,
+        "pred_hcp": 59.06,
+        "naive_hcp": 58.91
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2025-03-01",
+        "actual_hcp": 57.4,
+        "pred_hcp": 57.26,
+        "naive_hcp": 55.7
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2025-03-01",
+        "actual_hcp": 51.5,
+        "pred_hcp": 53.52,
+        "naive_hcp": 51.28
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2025-03-01",
+        "actual_hcp": 34.87,
+        "pred_hcp": 32.77,
+        "naive_hcp": 38.11
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2025-03-01",
+        "actual_hcp": 26.2,
+        "pred_hcp": 26.02,
+        "naive_hcp": 26.73
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2025-04-01",
+        "actual_hcp": 87.19,
+        "pred_hcp": 85.0,
+        "naive_hcp": 85.11
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2025-04-01",
+        "actual_hcp": 87.91,
+        "pred_hcp": 85.25,
+        "naive_hcp": 86.47
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2025-04-01",
+        "actual_hcp": 72.52,
+        "pred_hcp": 71.84,
+        "naive_hcp": 68.91
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2025-04-01",
+        "actual_hcp": 64.1,
+        "pred_hcp": 60.26,
+        "naive_hcp": 59.78
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2025-04-01",
+        "actual_hcp": 56.34,
+        "pred_hcp": 56.16,
+        "naive_hcp": 52.1
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2025-04-01",
+        "actual_hcp": 51.21,
+        "pred_hcp": 53.49,
+        "naive_hcp": 51.37
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2025-04-01",
+        "actual_hcp": 36.95,
+        "pred_hcp": 31.23,
+        "naive_hcp": 33.93
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2025-04-01",
+        "actual_hcp": 27.85,
+        "pred_hcp": 25.68,
+        "naive_hcp": 27.46
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2025-05-01",
+        "actual_hcp": 86.48,
+        "pred_hcp": 83.74,
+        "naive_hcp": 84.82
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2025-05-01",
+        "actual_hcp": 90.04,
+        "pred_hcp": 85.75,
+        "naive_hcp": 86.58
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2025-05-01",
+        "actual_hcp": 74.77,
+        "pred_hcp": 73.27,
+        "naive_hcp": 70.99
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2025-05-01",
+        "actual_hcp": 66.55,
+        "pred_hcp": 60.84,
+        "naive_hcp": 58.87
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2025-05-01",
+        "actual_hcp": 59.26,
+        "pred_hcp": 59.51,
+        "naive_hcp": 57.4
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2025-05-01",
+        "actual_hcp": 55.3,
+        "pred_hcp": 53.53,
+        "naive_hcp": 51.5
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2025-05-01",
+        "actual_hcp": 40.24,
+        "pred_hcp": 34.37,
+        "naive_hcp": 34.87
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2025-05-01",
+        "actual_hcp": 29.71,
+        "pred_hcp": 26.91,
+        "naive_hcp": 26.2
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2025-06-01",
+        "actual_hcp": 90.18,
+        "pred_hcp": 85.79,
+        "naive_hcp": 87.19
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2025-06-01",
+        "actual_hcp": 90.68,
+        "pred_hcp": 86.47,
+        "naive_hcp": 87.91
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2025-06-01",
+        "actual_hcp": 73.75,
+        "pred_hcp": 73.84,
+        "naive_hcp": 72.52
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2025-06-01",
+        "actual_hcp": 69.44,
+        "pred_hcp": 65.29,
+        "naive_hcp": 64.1
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2025-06-01",
+        "actual_hcp": 58.94,
+        "pred_hcp": 58.13,
+        "naive_hcp": 56.34
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2025-06-01",
+        "actual_hcp": 56.23,
+        "pred_hcp": 51.97,
+        "naive_hcp": 51.21
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2025-06-01",
+        "actual_hcp": 41.24,
+        "pred_hcp": 36.06,
+        "naive_hcp": 36.95
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2025-06-01",
+        "actual_hcp": 33.84,
+        "pred_hcp": 27.81,
+        "naive_hcp": 27.85
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2025-07-01",
+        "actual_hcp": 90.0,
+        "pred_hcp": 86.86,
+        "naive_hcp": 86.48
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2025-07-01",
+        "actual_hcp": 90.36,
+        "pred_hcp": 88.17,
+        "naive_hcp": 90.04
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2025-07-01",
+        "actual_hcp": 75.89,
+        "pred_hcp": 73.18,
+        "naive_hcp": 74.77
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2025-07-01",
+        "actual_hcp": 73.03,
+        "pred_hcp": 66.21,
+        "naive_hcp": 66.55
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2025-07-01",
+        "actual_hcp": 60.05,
+        "pred_hcp": 60.19,
+        "naive_hcp": 59.26
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2025-07-01",
+        "actual_hcp": 60.49,
+        "pred_hcp": 56.04,
+        "naive_hcp": 55.3
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2025-07-01",
+        "actual_hcp": 45.24,
+        "pred_hcp": 37.43,
+        "naive_hcp": 40.24
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2025-07-01",
+        "actual_hcp": 33.16,
+        "pred_hcp": 26.94,
+        "naive_hcp": 29.71
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2025-08-01",
+        "actual_hcp": 90.56,
+        "pred_hcp": 87.92,
+        "naive_hcp": 90.18
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2025-08-01",
+        "actual_hcp": 91.77,
+        "pred_hcp": 88.8,
+        "naive_hcp": 90.68
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2025-08-01",
+        "actual_hcp": 77.37,
+        "pred_hcp": 74.62,
+        "naive_hcp": 73.75
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2025-08-01",
+        "actual_hcp": 72.09,
+        "pred_hcp": 67.68,
+        "naive_hcp": 69.44
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2025-08-01",
+        "actual_hcp": 57.85,
+        "pred_hcp": 59.49,
+        "naive_hcp": 58.94
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2025-08-01",
+        "actual_hcp": 58.54,
+        "pred_hcp": 56.16,
+        "naive_hcp": 56.23
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2025-08-01",
+        "actual_hcp": 40.31,
+        "pred_hcp": 38.58,
+        "naive_hcp": 41.24
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2025-08-01",
+        "actual_hcp": 30.78,
+        "pred_hcp": 30.5,
+        "naive_hcp": 33.84
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2025-09-01",
+        "actual_hcp": 90.95,
+        "pred_hcp": 89.36,
+        "naive_hcp": 90.0
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2025-09-01",
+        "actual_hcp": 91.87,
+        "pred_hcp": 88.0,
+        "naive_hcp": 90.36
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2025-09-01",
+        "actual_hcp": 75.26,
+        "pred_hcp": 75.9,
+        "naive_hcp": 75.89
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2025-09-01",
+        "actual_hcp": 74.71,
+        "pred_hcp": 70.52,
+        "naive_hcp": 73.03
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2025-09-01",
+        "actual_hcp": 60.52,
+        "pred_hcp": 61.22,
+        "naive_hcp": 60.05
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2025-09-01",
+        "actual_hcp": 59.91,
+        "pred_hcp": 59.67,
+        "naive_hcp": 60.49
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2025-09-01",
+        "actual_hcp": 40.82,
+        "pred_hcp": 36.68,
+        "naive_hcp": 45.24
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2025-09-01",
+        "actual_hcp": 28.91,
+        "pred_hcp": 31.85,
+        "naive_hcp": 33.16
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "date": "2025-10-01",
+        "actual_hcp": 90.29,
+        "pred_hcp": 88.12,
+        "naive_hcp": 90.56
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "date": "2025-10-01",
+        "actual_hcp": 91.72,
+        "pred_hcp": 87.83,
+        "naive_hcp": 91.77
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "date": "2025-10-01",
+        "actual_hcp": 74.74,
+        "pred_hcp": 77.88,
+        "naive_hcp": 77.37
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "date": "2025-10-01",
+        "actual_hcp": 67.38,
+        "pred_hcp": 69.5,
+        "naive_hcp": 72.09
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "date": "2025-10-01",
+        "actual_hcp": 59.84,
+        "pred_hcp": 59.64,
+        "naive_hcp": 57.85
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "date": "2025-10-01",
+        "actual_hcp": 57.68,
+        "pred_hcp": 57.27,
+        "naive_hcp": 58.54
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "date": "2025-10-01",
+        "actual_hcp": 39.08,
+        "pred_hcp": 36.6,
+        "naive_hcp": 40.31
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "date": "2025-10-01",
+        "actual_hcp": 28.08,
+        "pred_hcp": 28.12,
+        "naive_hcp": 30.78
+      }
+    ]
+  },
+  "validation": {
+    "global_correlations": {
+      "nightlights_vs_hcp_pearson": 0.96,
+      "nightlights_vs_hcp_spearman": 0.983,
+      "tpi_vs_hcp_pearson": 0.935,
+      "trends_vs_hcp_pearson": 0.89,
+      "jobs_vs_hcp_pearson": 0.899
+    },
+    "province_correlations": [
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "cluster_label": "Moteur",
+        "r_nightlights_hcp": 0.966,
+        "r_nightlights_lead1_hcp": 0.961,
+        "r_tpi_hcp": 0.95
+      },
+      {
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "cluster_label": "Moteur",
+        "r_nightlights_hcp": 0.981,
+        "r_nightlights_lead1_hcp": 0.978,
+        "r_tpi_hcp": 0.977
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "cluster_label": "Moteur",
+        "r_nightlights_hcp": 0.934,
+        "r_nightlights_lead1_hcp": 0.932,
+        "r_tpi_hcp": 0.919
+      },
+      {
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "cluster_label": "En transition",
+        "r_nightlights_hcp": 0.71,
+        "r_nightlights_lead1_hcp": 0.659,
+        "r_tpi_hcp": 0.646
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "cluster_label": "En transition",
+        "r_nightlights_hcp": 0.814,
+        "r_nightlights_lead1_hcp": 0.759,
+        "r_tpi_hcp": 0.829
+      },
+      {
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "cluster_label": "En transition",
+        "r_nightlights_hcp": 0.672,
+        "r_nightlights_lead1_hcp": 0.591,
+        "r_tpi_hcp": 0.664
+      },
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "cluster_label": "Fragile",
+        "r_nightlights_hcp": 0.341,
+        "r_nightlights_lead1_hcp": 0.244,
+        "r_tpi_hcp": 0.422
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "cluster_label": "Fragile",
+        "r_nightlights_hcp": 0.808,
+        "r_nightlights_lead1_hcp": 0.642,
+        "r_tpi_hcp": 0.843
+      }
+    ],
+    "territorial_gap": {
+      "latest_date": "2025-10-01",
+      "tanger_tpi": 87.5,
+      "hinterland_mean_tpi": 30.5,
+      "gap_ratio": 2.87
+    },
+    "nowcast_comparison": {
+      "rmse_model": 2.893,
+      "rmse_naive": 3.207,
+      "rmse_gain_pct": 9.8,
+      "mae_model": 2.363,
+      "mae_naive": 2.593,
+      "mape_model_pct": 4.19,
+      "mape_naive_pct": 4.94,
+      "beats_naive": true
+    }
+  },
+  "alerts": {
+    "latest_date": "2025-10-01",
+    "live_alerts": [
+      {
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "severity": "danger",
+        "badge": "Tension emploi",
+        "metric_value": -22.4,
+        "message": "Chefchaouen : offres d'emploi -22.4 % sur 12 mois"
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "severity": "danger",
+        "badge": "Décrochage",
+        "metric_value": -18.3,
+        "message": "Ouezzane : luminosité -18.3 % sur 3 mois (TPI -1.6 pts/an)"
+      },
+      {
+        "province_id": "TTA-08",
+        "province_name": "Ouezzane",
+        "severity": "danger",
+        "badge": "Tension emploi",
+        "metric_value": -12.8,
+        "message": "Ouezzane : offres d'emploi -12.8 % sur 12 mois"
+      },
+      {
+        "province_id": "TTA-01",
+        "province_name": "Tanger-Assilah",
+        "severity": "success",
+        "badge": "Accélération",
+        "metric_value": 2.5,
+        "message": "Tanger-Assilah : accélération (+2.5 pts TPI, lumière +7.5 % sur 12 mois)"
+      },
+      {
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "severity": "success",
+        "badge": "Accélération",
+        "metric_value": 1.9,
+        "message": "Tétouan : accélération (+1.9 pts TPI, lumière +8.2 % sur 12 mois)"
+      },
+      {
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "severity": "success",
+        "badge": "Accélération",
+        "metric_value": 1.5,
+        "message": "Larache : accélération (+1.5 pts TPI, lumière +11.2 % sur 12 mois)"
+      }
+    ],
+    "historical_shocks_count": 11,
+    "historical_shocks": [
+      {
+        "date": "2020-03-01",
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "severity": "critical",
+        "type": "rupture",
+        "z_score": -2.76,
+        "message": "Fahs-Anjra : rupture brutale d'activité (-3.2 pts TPI en 1 mois)"
+      },
+      {
+        "date": "2020-03-01",
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "severity": "critical",
+        "type": "rupture",
+        "z_score": -2.59,
+        "message": "Tétouan : rupture brutale d'activité (-2.4 pts TPI en 1 mois)"
+      },
+      {
+        "date": "2020-03-01",
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "severity": "critical",
+        "type": "rupture",
+        "z_score": -2.42,
+        "message": "Larache : rupture brutale d'activité (-2.3 pts TPI en 1 mois)"
+      },
+      {
+        "date": "2020-03-01",
+        "province_id": "TTA-06",
+        "province_name": "Al Hoceïma",
+        "severity": "critical",
+        "type": "rupture",
+        "z_score": -2.4,
+        "message": "Al Hoceïma : rupture brutale d'activité (-3.4 pts TPI en 1 mois)"
+      },
+      {
+        "date": "2020-05-01",
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "severity": "critical",
+        "type": "rupture",
+        "z_score": -2.34,
+        "message": "Tétouan : rupture brutale d'activité (-4.2 pts TPI en 1 mois)"
+      },
+      {
+        "date": "2020-05-01",
+        "province_id": "TTA-04",
+        "province_name": "M'diq-Fnideq",
+        "severity": "critical",
+        "type": "rupture",
+        "z_score": -2.1,
+        "message": "M'diq-Fnideq : rupture brutale d'activité (-4.3 pts TPI en 1 mois)"
+      },
+      {
+        "date": "2020-05-01",
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "severity": "critical",
+        "type": "rupture",
+        "z_score": -2.26,
+        "message": "Larache : rupture brutale d'activité (-3.8 pts TPI en 1 mois)"
+      },
+      {
+        "date": "2021-07-01",
+        "province_id": "TTA-07",
+        "province_name": "Chefchaouen",
+        "severity": "critical",
+        "type": "rupture",
+        "z_score": -2.28,
+        "message": "Chefchaouen : rupture brutale d'activité (-2.9 pts TPI en 1 mois)"
+      },
+      {
+        "date": "2021-08-01",
+        "province_id": "TTA-03",
+        "province_name": "Tétouan",
+        "severity": "critical",
+        "type": "rupture",
+        "z_score": -2.25,
+        "message": "Tétouan : rupture brutale d'activité (-0.8 pts TPI en 1 mois)"
+      },
+      {
+        "date": "2021-09-01",
+        "province_id": "TTA-02",
+        "province_name": "Fahs-Anjra",
+        "severity": "critical",
+        "type": "rupture",
+        "z_score": -2.18,
+        "message": "Fahs-Anjra : rupture brutale d'activité (-1.1 pts TPI en 1 mois)"
+      },
+      {
+        "date": "2022-11-01",
+        "province_id": "TTA-05",
+        "province_name": "Larache",
+        "severity": "critical",
+        "type": "rupture",
+        "z_score": -2.4,
+        "message": "Larache : rupture brutale d'activité (-1.7 pts TPI en 1 mois)"
+      }
+    ],
+    "covid_2020_detected": true
+  }
+}
